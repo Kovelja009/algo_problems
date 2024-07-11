@@ -21,6 +21,8 @@
   - [Trie](#trie)
   - [Intervals](#intervals)
   - [Monotonic Stack](#monotonic-stack)
+- [Top Interview 150 🍜](top-interview-150-)
+- [Microsoft 🏮](microsoft-)
 
 
 </table>
@@ -227,3 +229,66 @@ Notes:
 - once finished `ans += 1` (because current day is also counted)
 - then just push `(price, ans)` to the stack
 - and return `ans`
+
+  <br>
+
+ 
+<img src="https://github.com/Kovelja009/algo_problems/assets/81018289/f41ee5cb-0931-47fc-8071-e62ff590bfc9" alt="LeetCode 75" width="1500" />
+
+  </br>
+
+  ---
+  
+<table>
+  <tr>
+
+  <td>
+
+  <img src="https://github.com/Kovelja009/algo_problems/assets/81018289/110ed354-3a02-46ac-af6a-0f58f4332fef" alt="LeetCode 150" width="250" />
+
+  </td>
+  <td align="left">
+
+  # Top Interview 150 🍜 
+  🟢 easy: 0
+  
+  🟡 medium: 0
+  
+  🔴 hard: 0
+
+  </td>
+  </tr>
+</table>
+
+  
+  <br>
+  <img src="https://github.com/Kovelja009/algo_problems/assets/81018289/14bf71c7-96c0-453e-8d9e-4cf097b9cc90" alt="LeetCode 150" width="1500" />
+
+  </br>
+
+
+
+  ---
+<table>
+  <tr>
+
+  <td>
+
+  <img src="https://github.com/Kovelja009/algo_problems/assets/81018289/0b343040-d2e2-4393-9cc5-db3d2c88f33c" alt="LeetCode 150" width="250" />
+
+  </td>
+  <td align="left">
+
+  
+  # Microsoft 🏮 
+  🟢 easy: 0
+  
+  🟡 medium: 0
+  
+  🔴 hard: 0
+
+  </td>
+  </tr>
+</table>
+
+
