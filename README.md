@@ -23,7 +23,10 @@
   - [Monotonic Stack](#monotonic-stack)
 - [Top Interview 150 🍜](top-interview-150-)
   - [Array/String](#arraystring)
-- [Microsoft 🏮](microsoft-)
+- [Microsoft 🏮](#microsoft-)
+  - [🟢 Easy](#-easy)
+  - [🟡 Medium](#-medium)
+  - [🔴 Hard](#-hard)
 
 
 </table>
@@ -482,8 +485,8 @@ Notes:
 - then we use `set` to store each frequency and if the frequency is already in the set, we decrement the frequency until it is not in the set and increment the `deletions`
 
 ---
-## Hard
-### 🔴 [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) 
+## 🔴 Hard
+### [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) 
 `stack`
 
 Notes:
