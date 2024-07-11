@@ -357,14 +357,156 @@ Notes:
 
   
   # Microsoft 🏮 
-  🟢 easy: 0
+  🟢 easy: 2
   
-  🟡 medium: 0
+  🟡 medium: 11
   
-  🔴 hard: 0
+  🔴 hard: 3
 
   </td>
   </tr>
 </table>
+
+
+## 🟢 Easy
+### [13. Roman to Integer](https://leetcode.com/problems/roman-to-integer/)
+`hash table`
+
+Notes:
+- we use `hash table` to map the **roman characters** to the **integer values**
+
+---
+### [359. Logger Rate Limiter](https://leetcode.com/problems/logger-rate-limiter/)
+`hash map`
+
+Notes:
+- just put message in the `hash map` where the value is `timestamp` and if the message is already in the `hash map` and the difference between the `timestamp` and the value is less than `10`, we return `False`, otherwise we update the `timestamp` and return `True`
+
+---
+## 🟡 Medium
+### [56. Merge Intervals](https://leetcode.com/problems/merge-intervals/)
+`sorting`
+
+Notes:
+- sort the intervals based on the start
+- if the end of the current interval is greater than the start of the next interval, we merge them
+
+---
+### [146. LRU Cache](https://leetcode.com/problems/lru-cache/)
+`linked list` `hash table`
+
+Notes:
+- similar to what we do at the **OS course** :)
+- we use `OrderedDict` that keeps track of order of elements that were added
+- when getting element, we move it to the end of the list
+- when adding element, if present we move it to the end, if not we add it to the end and remove the first element if the size is greater than the capacity
+
+---
+### [200. Number of Islands](https://leetcode.com/problems/number-of-islands/)
+`bfs` `dfs`
+
+Notes:
+- we did this problem in the **Algorithms** course
+- when we find `grid[i][j] == '1'` we increment the count and do the BFS to mark all the connected islands as visited
+
+---
+### [15. 3Sum](https://leetcode.com/problems/3sum/)
+`two pointers`
+
+Notes:
+- discussion -> *not the 3some I wanted*
+- sort the array
+- for each element `nums[i]` we use two pointers `left=i+1` and `right=n-1`
+- if sum is less than `0` we increment the `left`, if sum is greater than `0` we decrement the `right`, if sum is equal to `0` we add the triplet to the result
+--- 
+### [528. Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight/)
+`prefix sum` `binary search`
+
+Notes:
+- we first make `pdf` (*probability density function*) by dividing the weight by the sum of all weights
+- then we make `cdf` (*cumulative density function*) (prefix sum)
+- then for each random number we do the `binary search` to find the index of the number in the `cdf` array and return that **index**
+
+---
+### [253. Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/)
+`sorting` `heap`
+
+Notes:
+- we **sort** intervals by `start` and then `end` time 
+- after that we use `heap` to keep track of the end time of the meetings
+- if the `start time` of the meeting is greater than the `end time` of the meeting, we `pop` the `end time` from the `heap` and `push` the new `end time`
+- otherwise we just `push` the `end time` to the `heap`
+
+---
+### [380. Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/)
+`hash map` `list`
+
+Notes:
+- use `hashmap` in a way that `dict[val] = len(lst)-1` and `lst.append(val)`
+- then when removing the element, we swap the element with the last element and `pop` the last element and also `remove` element from `hashmap`
+
+---
+### [54. Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)
+`matrix`
+
+Notes:
+- same as the problem from `UUP` course `>_<`
+- make `direction array` and check whether you are in the bounds and if you are not in the bounds or you have visited the element, change the direction
+---
+### [17. Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)
+`backtracking` `hash table`
+
+Notes:
+- have done it before (I believe in the **Algorithms** course)
+- we use `backtracking` by going through each letter of each digit and building `combination` after which we recursively call the function for the next digit, after that we remove the last letter from the `combination`
+- we use `hash table` to map the digit to the 
+
+---
+### [394. Decode String](https://leetcode.com/problems/decode-string/)
+`stack`
+
+Notes:
+- idea is to have 2 stacks -> `letter_stack` and `digit_stack`
+- first we initialize `ans = ""` and `num = ""`
+- `curr.isdigit()` -> we add the digit to the `num`
+- `curr == '['` -> we add the `num` to the `digit_stack` and `ans` to the `letter_stack` and reset the `num` and `ans`
+- `curr == ']'` -> we pop the `num` and `letters` from the stacks and `ans = letters + num*ans`
+- `curr.isalpha()` -> we add the letter to the `ans`
+
+---
+### [1647. Minimum Deletions to Make Character Frequencies Unique](https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique/)
+`hash map` `set`
+
+Notes:
+- we use `hash map` to count the frequency of the characters
+- then we use `set` to store each frequency and if the frequency is already in the set, we decrement the frequency until it is not in the set and increment the `deletions`
+
+---
+## Hard
+### 🔴 [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) 
+`stack`
+
+Notes:
+- idea is that for each index we need to find the maximum height to the left and right of that index (we use stack for it)
+- than answer is collecting thins for each element: `ans += min(left_max, right_max) - height[i]` if that value is greater than `0`
+
+---
+### [273. Integer to English Words](https://leetcode.com/problems/integer-to-english-words/)
+`math` `string`
+
+Notes:
+- interesting approach where we parse three digits at a time and convert them to the words
+
+---
+### [224. Basic Calculator](https://leetcode.com/problems/basic-calculator/)
+`stack`
+
+Notes:
+- we use `num_stack` and `sign_stack` to store the numbers and signs before the parenthesis
+- we initialize `num = 0` and `sign = 1`
+- if we encounter `(` we push the `num` and `sign` to the stacks and reset the `num` and `sign`
+- if we encounter `)` we pop the `num` and `sign` from the stacks and calculate the `num = num_stack.pop() + sign_stack.pop()*num`
+
+
 
 
