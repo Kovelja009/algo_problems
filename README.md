@@ -10,16 +10,17 @@
     </td>
     <td>
 
-- [LeetCode 75 🌸](#leetcode-75-) 
-  1. [Heap / Priority Queue](#heap--priority-queue)
-  2. [Binary Search](#binary-search)
-  3. [Backtracking](#backtracking)
-  4. [Dynamic Programming (1D)](#dynamic-programming-1d)
-  5. [Dynamic Programming (2D)](#dynamic-programming-2d)
-  6. [Bit Manipulation](#bit-manipulation)
-  7. [Trie](#trie)
-  8. [Intervals](#intervals)
-  9. [Monotonic Stack](#monotonic-stack)
+- [LeetCode 75 🌸](#leetcode-75-)
+  - [Graphs - DFS](#graphs---dfs)
+  - [Heap / Priority Queue](#heap--priority-queue)
+  - [Binary Search](#binary-search)
+  - [Backtracking](#backtracking)
+  - [Dynamic Programming (1D)](#dynamic-programming-1d)
+  - [Dynamic Programming (2D)](#dynamic-programming-2d)
+  - [Bit Manipulation](#bit-manipulation)
+  - [Trie](#trie)
+  - [Intervals](#intervals)
+  - [Monotonic Stack](#monotonic-stack)
 
 
 </table>
@@ -39,17 +40,27 @@
   # LeetCode 75 🌸 
   🟢 easy: 0
   
-  🟡 medium: 17
+  🟡 medium: 20
   
   🔴 hard: 0
   </td>
   </tr>
 </table>
 
+## **Graphs - DFS**
+
+### [399. Evaluate Division](https://leetcode.com/problems/evaluate-division/)
+
+Notes:
+- build a graph with the given equations and values
+  ```        
+  for (A, B), value in zip(equations, values):
+            graph[A][B] = value
+            graph[B][A] = 1 / value```
+- after that, just use BFS (lol) betwen start and end of the query, if the path exists, thats the solution
 
 
 ---
-
 ## **Heap / Priority Queue**
 
 ### [2542. Maximum Subsequence Score](https://leetcode.com/problems/maximum-subsequence-score/)
@@ -142,6 +153,25 @@ Notes:
 
 Notes:
 - classic dp problem where formula is `dp[i][j] = dp[i-1][j-1] + 1` if `text1[i] == text2[j]` otherwise `dp[i][j] = max(dp[i-1][j], dp[i][j-1])`
+
+---
+### [714. Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)
+
+Notes:
+- different that the standard dp problem
+- we initialize `cash = 0` and `stock = -prices[0]` because we can buy the stock at the first day
+- for each day, we can either sell  the stock `cash=max(cash, stock + stocks[i] - fee)` or buy the new stock `stock=max(stock, cash - stocks[i])`
+
+---
+### [72. Edit Distance](https://leetcode.com/problems/edit-distance/)
+
+Notes:
+- similar to the problem from Speech Recognition course (***Dynamic Time Warping***)
+- initialize the dp matrix with the size of `len(word1)+1` and `len(word2)+1`
+- cover base cases: when one of the words is `empty`, the distance is the length of the other word
+- formula is:
+    - if the characters are the same, `dp[i][j] = dp[i-1][j-1]`
+    - else the characters are different, `dp[i][j] = min(dp[i-1][j-1], dp[i-1][j], dp[i][j-1]) + 1`
 
 ---
 ## **Bit Manipulation**
