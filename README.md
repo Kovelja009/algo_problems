@@ -22,6 +22,7 @@
   - [Intervals](#intervals)
   - [Monotonic Stack](#monotonic-stack)
 - [Top Interview 150 🍜](top-interview-150-)
+  - [Array/String](#arraystring)
 - [Microsoft 🏮](microsoft-)
 
 
@@ -250,15 +251,90 @@ Notes:
   <td align="left">
 
   # Top Interview 150 🍜 
-  🟢 easy: 0
+  🟢 easy: 5
   
-  🟡 medium: 0
+  🟡 medium: 5
   
   🔴 hard: 0
 
   </td>
   </tr>
 </table>
+
+## Array/String
+---
+### [88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)
+
+Notes:
+- interesting approach where we start from the end
+and we have `k=m+n-1`, `i=m-1` and `j=n-1`
+- why from the end -> because we don't need to insert anything just replace the values
+
+---
+### [27. Remove Element](https://leetcode.com/problems/remove-element/)
+
+Notes:
+- idea is to use two pointers, one for the current element and one for the last element that is not `val`
+
+---
+### [26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
+
+Notes:
+- again two pointers approach, one for the current element and one for the first element that greater than current
+
+---
+### [80. Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)
+
+Notes:
+- two pointers but interesting approack where we start for loop with `i` from the second element and `curr=2` and only update if `nums[i] != nums[curr-2]` 
+
+---
+### [169. Majority Element](https://leetcode.com/problems/majority-element/)
+  
+Notes:
+- simple use of hash table -> Space complexity O(n)- Boyer-Moore Voting Algorithm can be used to reduce the space complexity to O(1)
+
+---
+### [189. Rotate Array](https://leetcode.com/problems/rotate-array/)
+- Notes:
+  1. Solution 1 (using extra space O(n)):
+    - create a new array `temp`
+    - do the `k = k%size` to avoid index out of range
+    - then copy elements starting from index `start=size-k` to the end
+    - then copy elements from the `0` to the `start`
+    - then copy the `temp` to the `nums`
+  2. Solution 2 (Using O(1) space):
+    - reverse the whole array
+    - reverse the first `k` elements
+    - reverse the last `n-k` elements
+
+---
+### [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
+  
+Notes:
+- simple approach where we keep track of the minimum price up to this moment and based on that we save the maximum profit
+
+---
+### [122. Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)
+
+Notes:
+- we add the profit if the price is greater than the previous one :(
+
+
+---
+### [55. Jump Game](https://leetcode.com/problems/jump-game/)
+
+Notes:
+- at each step, we update the maximum reachable index
+- and then check whether we can reach current index with the maximum reachable index
+  
+---
+### [45. Jump Game II](https://leetcode.com/problems/jump-game-ii/)
+
+Notes:
+- we keep track of the furthest we can jump
+- when `i` reaches `current end` we update the `current end` with the `farthest` and increment the `jumps` 
+
 
   
   <br>
