@@ -362,9 +362,9 @@ Notes:
   # Microsoft 🏮 
   🟢 easy: 2
   
-  🟡 medium: 11
+  🟡 medium: 13
   
-  🔴 hard: 3
+  🔴 hard: 4
 
   </td>
   </tr>
@@ -485,6 +485,29 @@ Notes:
 - then we use `set` to store each frequency and if the frequency is already in the set, we decrement the frequency until it is not in the set and increment the `deletions`
 
 ---
+### [210. Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)
+`topological sort` `dfs` `graph`
+
+Notes:
+- lol -> had to watch 20 min video explanation of topological sort, after which I consulted gpt for better implementation :(
+- we want to to topological sort of the graph
+- we can use `dfs` to find the cycle in the graph
+- Steps:
+    1. build the graph, initialize `visited` to `0s` and `result=[]`
+    2. for each course if `visited[course] != 2` we call the `dfs` function
+    3. in the `dfs` function we check if the `visited[course] == 1` meaning we have detected cycle
+    4. if we haven't detected cycle we set the `visited[course] = 1` and for each `neighbour` we call the `dfs` function if `visited[neighbour] != 2`
+---
+
+### [1239. Maximum Length of a Concatenated String with Unique Characters](https://leetcode.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters/)
+`backtrack` `bit manipulation`
+
+Notes:
+- even though the solution seems to be `dp` it is actually `backtrack`
+- how to know when to use `backtrack` vs `dp`
+- in this problem we need to have insight into all the previous states that we have selected so we know that current word can be added to the previous state -> that's why we can't use `dp`
+- Any time the problem is naturally phrased in terms of I have a **current state** and should I take this element or not?, and answering can I take this element? **involves storing state information about the current selection**, these are clues you should use `DFS` + `backtracking`
+---
 ## 🔴 Hard
 ### [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) 
 `stack`
@@ -509,6 +532,20 @@ Notes:
 - we initialize `num = 0` and `sign = 1`
 - if we encounter `(` we push the `num` and `sign` to the stacks and reset the `num` and `sign`
 - if we encounter `)` we pop the `num` and `sign` from the stacks and calculate the `num = num_stack.pop() + sign_stack.pop()*num`
+
+---
+### [2035. Partition Array Into Two Arrays to Minimize Sum Difference](https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/)
+`meet in the middle` `binary search` `combinations`
+
+Notes:
+- really hard problem -> looked at the [solution](https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/solutions/1513435/python-easy-explanation-meet-in-the-middle/)
+
+- using technique called `meet in the middle`
+- we split the array into two parts and for each part we calculate the sum of all the possible combinations from 1 to `n//2` elements:
+  - for each `k` we make `left_k_sums` which is the sum of all combinations of `k` elements from the `left part`
+  - then we make `right_k_sums` which is the sum of all combinations of `n//2 - k` elements from the `right part` (if we want to combine elements from both parts)
+  - then we need to fidn what is closest sum of `n // 2 - k` elements in the right_k_sums where `target` is `half_sum - left_k_sum` using `binary search`
+  - and in the end when we have both left and right sums we can calculate the difference and update the `min_diff`
 
 
 
