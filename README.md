@@ -21,7 +21,7 @@
   - [Trie](#trie)
   - [Intervals](#intervals)
   - [Monotonic Stack](#monotonic-stack)
-- [Top Interview 150 🍜](top-interview-150--)
+- [Top Interview 150 🍜](#top-interview-150-)
   - [Array/String](#arraystring)
 - [Microsoft 🏮](#microsoft-)
   - [🟢 Easy](#-easy)
