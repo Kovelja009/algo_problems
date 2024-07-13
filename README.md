@@ -364,7 +364,7 @@ Notes:
   
   🟡 medium: 13
   
-  🔴 hard: 4
+  🔴 hard: 5
 
   </td>
   </tr>
@@ -547,6 +547,24 @@ Notes:
   - then we need to fidn what is closest sum of `n // 2 - k` elements in the right_k_sums where `target` is `half_sum - left_k_sum` using `binary search`
   - and in the end when we have both left and right sums we can calculate the difference and update the `min_diff`
 
+---
+### [127. Word Ladder](https://leetcode.com/problems/word-ladder/)
+`BFS` `hash map`
 
+Notes:
+- idea is to first build hashmap where we have all the possible words that can be made from the current word:
+
+``` 						 
+            hit, level = 1
+          /       |       \
+        *it      h*t       hi*
+```
+- basically we have `map[*it] = [git, hit, pit]` and so on
+- once we build hashmap we can start the `BFS` where we keep track of the `level` and `visited` words
+- at the beginning `queue = [(beginWord, 1)]`
+- for each word in the queue:
+  - we go through all patterns of current word and for each pattern check all the words
+  - if the word is in the `endWord` we return the `level+1`
+  - if the word is not in the `visited` we add it to the `visited` and to the `queue`
 
 
