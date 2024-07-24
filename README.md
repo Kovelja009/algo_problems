@@ -364,7 +364,7 @@ Notes:
   
   🟡 medium: 13
   
-  🔴 hard: 5
+  🔴 hard: 6
 
   </td>
   </tr>
@@ -567,4 +567,13 @@ Notes:
   - if the word is in the `endWord` we return the `level+1`
   - if the word is not in the `visited` we add it to the `visited` and to the `queue`
 
+---
+### [212. Word Search II](https://leetcode.com/problems/word-search-ii/)
+`trie` `dfs`
 
+Notes:
+- so we need to do the backtrack from every cell in the board, but how can we do that efficiently?
+  - first thing that comes to mind is using `hashmap` to store the words and then for each cell in the board we do the `dfs` to check if the word is in the `hashmap`
+  - but that is not efficient because sometimes we can stop the backtrack earlier if the current word is not the prefix of any word in the `hashmap`
+  - so that's why we use `trie` to store the words and then for each cell in the board we do the `dfs` and check if the current word is in the `trie` 
+  - `trie` if efficient for **prefix search**
