@@ -364,7 +364,7 @@ Notes:
   
   🟡 medium: 13
   
-  🔴 hard: 6
+  🔴 hard: 7
 
   </td>
   </tr>
@@ -577,3 +577,18 @@ Notes:
   - but that is not efficient because sometimes we can stop the backtrack earlier if the current word is not the prefix of any word in the `hashmap`
   - so that's why we use `trie` to store the words and then for each cell in the board we do the `dfs` and check if the current word is in the `trie` 
   - `trie` if efficient for **prefix search**
+
+---
+### [10. Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)
+`dp`
+
+Notes:
+- tried to solve without using `dp` but wasn't successful
+- so we can us dp as shown [here](https://leetcode.com/problems/regular-expression-matching/solutions/5198472/easy-solution-dp-python/):
+  - If `p[j-1]` is a character or `'.'`, then `dp[i][j]` depends on whether the previous characters match and if the current characters of `s` and `p` match.
+
+  - If `p[j-1]` is `'*'`, it can either match zero characters or one or more characters. This requires us to consider two cases:
+
+  - The `'*'` matches zero characters: We look at `dp[i][j-2]`.
+
+  - The `'*'` matches one or more characters: We look at `dp[i-1][j]` and ensure the preceding character matches `s[i-1]`.
