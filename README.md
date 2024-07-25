@@ -364,7 +364,7 @@ Notes:
   
   🟡 medium: 13
   
-  🔴 hard: 7
+  🔴 hard: 8
 
   </td>
   </tr>
@@ -592,3 +592,13 @@ Notes:
   - The `'*'` matches zero characters: We look at `dp[i][j-2]`.
 
   - The `'*'` matches one or more characters: We look at `dp[i-1][j]` and ensure the preceding character matches `s[i-1]`.
+
+---
+### [25. Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)
+`linked list`
+
+Notes:
+- problem which has composite solution
+- we can make function that checks whether we have next `k` elements
+- we have function that reverses the `k` elements
+- then we have function that we recursively call which revierses the `k` elements and then calls itself for the rest of the list 
