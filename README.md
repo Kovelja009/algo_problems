@@ -362,7 +362,7 @@ Notes:
   # Microsoft 🏮 
   🟢 easy: 2
   
-  🟡 medium: 13
+  🟡 medium: 14
   
   🔴 hard: 8
 
@@ -507,6 +507,18 @@ Notes:
 - how to know when to use `backtrack` vs `dp`
 - in this problem we need to have insight into all the previous states that we have selected so we know that current word can be added to the previous state -> that's why we can't use `dp`
 - Any time the problem is naturally phrased in terms of I have a **current state** and should I take this element or not?, and answering can I take this element? **involves storing state information about the current selection**, these are clues you should use `DFS` + `backtracking`
+
+---
+### [498. Diagonal Traverse](https://leetcode.com/problems/diagonal-traverse/)
+`matrix`
+
+Notes:
+- Approach I:
+  - we can just have `direction` flag that tells us whether we are going up or down, and if the coordinates are out of bounds we change the direction and update coordinates
+- Approach II ([source](https://leetcode.com/problems/diagonal-traverse/solutions/581868/easy-python-no-direction-checking/)):
+  - every diagonal has equal sum of coordinates, so we can use that to build the `hash map` where the key is the sum of the coordinates and the value is the list of elements on that diagonal
+  - then we can just go through the `hash map` and add the elements to the result, and for every even diagonal we reverse the list
+
 ---
 ## 🔴 Hard
 ### [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) 
@@ -601,4 +613,4 @@ Notes:
 - problem which has composite solution
 - we can make function that checks whether we have next `k` elements
 - we have function that reverses the `k` elements
-- then we have function that we recursively call which revierses the `k` elements and then calls itself for the rest of the list 
+- then we have function that we recursively call which revierses the `k` elements and then calls itself for the rest of the listcd  
