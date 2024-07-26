@@ -362,7 +362,7 @@ Notes:
   # Microsoft 🏮 
   🟢 easy: 2
   
-  🟡 medium: 14
+  🟡 medium: 15
   
   🔴 hard: 8
 
@@ -518,6 +518,16 @@ Notes:
 - Approach II ([source](https://leetcode.com/problems/diagonal-traverse/solutions/581868/easy-python-no-direction-checking/)):
   - every diagonal has equal sum of coordinates, so we can use that to build the `hash map` where the key is the sum of the coordinates and the value is the list of elements on that diagonal
   - then we can just go through the `hash map` and add the elements to the result, and for every even diagonal we reverse the list
+
+---
+### [556. Next Greater Element III](https://leetcode.com/problems/next-greater-element-iii/)
+`string` `arithmetics`
+
+Notes:
+- GPT did it well `:-)`
+- First we go from the end and find the element such that `nums[i] < nums[i+1]`
+- then going from the end again we find the first element such that `nums[j] > nums[i]`
+- then we swap the `nums[i]` and `nums[j]` and reverse the elements from `i+1` to the end
 
 ---
 ## 🔴 Hard
