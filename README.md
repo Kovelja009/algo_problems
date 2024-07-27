@@ -362,7 +362,7 @@ Notes:
   # Microsoft 🏮 
   🟢 easy: 2
   
-  🟡 medium: 18
+  🟡 medium: 19
   
   🔴 hard: 9
 
@@ -550,6 +550,13 @@ Notes:
 Notes:
 - idea is to use `dfs` to go through the tree and for each level we append the element to the `hash map` where the key is the `level`
 - after that for every odd level we reverse the list and add it to the result
+
+---
+### [43. Multiply Strings](https://leetcode.com/problems/multiply-strings/)
+`string` `arithmetics`
+
+Notes:
+- algorithm is something we did in `UUP` course `:-)`
 
 ---
 ## 🔴 Hard
