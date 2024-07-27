@@ -364,7 +364,7 @@ Notes:
   
   🟡 medium: 16
   
-  🔴 hard: 8
+  🔴 hard: 9
 
   </td>
   </tr>
@@ -630,4 +630,14 @@ Notes:
 - problem which has composite solution
 - we can make function that checks whether we have next `k` elements
 - we have function that reverses the `k` elements
-- then we have function that we recursively call which revierses the `k` elements and then calls itself for the rest of the listcd  
+- then we have function that we recursively call which revierses the `k` elements and then calls itself for the rest of the listcd
+
+---
+### [297. Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) 
+`binary tree` `dfs`
+
+Notes:
+- we can use `dfs` with `hashmap` to store nodes on each level in order to serialize the tree
+- then we can use `queue` to deserialize the tree:
+  - while we have elements:
+    - we pop the element from the queue and if it is not `None` we create the left and right child and add them to the queue  
