@@ -362,7 +362,7 @@ Notes:
   # Microsoft 🏮 
   🟢 easy: 2
   
-  🟡 medium: 15
+  🟡 medium: 16
   
   🔴 hard: 8
 
@@ -528,6 +528,13 @@ Notes:
 - First we go from the end and find the element such that `nums[i] < nums[i+1]`
 - then going from the end again we find the first element such that `nums[j] > nums[i]`
 - then we swap the `nums[i]` and `nums[j]` and reverse the elements from `i+1` to the end
+
+---
+### [151. Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/)
+`string`
+
+Notes:
+- really easy problem, just split the string by the space and reverse the list and join it back withou the space at the end
 
 ---
 ## 🔴 Hard
