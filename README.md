@@ -362,7 +362,7 @@ Notes:
   # Microsoft 🏮 
   🟢 easy: 2
   
-  🟡 medium: 17
+  🟡 medium: 18
   
   🔴 hard: 9
 
@@ -542,6 +542,14 @@ Notes:
 
 Notes:
 - idea is just while we have same colors we move the `right` pointer and also want to keep track of the biggest `time` for that sequence, so we always add smaller number to the `ans`, but update the `time` with the bigger one
+
+---
+### [103. Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)
+`dfs` `hash map`
+
+Notes:
+- idea is to use `dfs` to go through the tree and for each level we append the element to the `hash map` where the key is the `level`
+- after that for every odd level we reverse the list and add it to the result
 
 ---
 ## 🔴 Hard
