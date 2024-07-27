@@ -362,7 +362,7 @@ Notes:
   # Microsoft 🏮 
   🟢 easy: 2
   
-  🟡 medium: 16
+  🟡 medium: 17
   
   🔴 hard: 9
 
@@ -535,6 +535,13 @@ Notes:
 
 Notes:
 - really easy problem, just split the string by the space and reverse the list and join it back withou the space at the end
+
+---
+### [1578. Minimum Time to Make Rope Colorful](https://leetcode.com/problems/minimum-time-to-make-rope-colorful/)
+`two pointers`
+
+Notes:
+- idea is just while we have same colors we move the `right` pointer and also want to keep track of the biggest `time` for that sequence, so we always add smaller number to the `ans`, but update the `time` with the bigger one
 
 ---
 ## 🔴 Hard
