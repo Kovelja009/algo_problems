@@ -362,7 +362,7 @@ Notes:
   # Microsoft 🏮 
   🟢 easy: 2
   
-  🟡 medium: 21
+  🟡 medium: 22
   
   🔴 hard: 9
 
@@ -574,6 +574,16 @@ Notes:
 - we can use `inorder traversal` to get the elements in the sorted order
 - so in the `processing` part of the `inorder traversal` we check whether the current element is smaller than the previous element is we update our `last` and set `first` if not already set, also update our 'prev'
 - it's interesting how we can have whole array of misaligned elements but we only need to swap the first and the last one, so that why we always update the `last` element  
+
+---
+### [173. Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/)
+`inorder traversal` `stack`
+
+Notes:
+- constraint is that we need to have `O(h)` space complexity
+- so we only write the `inorder traversal` function that goes to the leftmost element and then for each `next` call we pop the element from the stack and go to the right child of that element and add all the left children to the stack
+- `hasNext` is just checking whether the stack is empty
+
 ---
 ## 🔴 Hard
 ### [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) 
