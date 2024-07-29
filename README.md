@@ -362,7 +362,7 @@ Notes:
   # Microsoft 🏮 
   🟢 easy: 2
   
-  🟡 medium: 20
+  🟡 medium: 21
   
   🔴 hard: 9
 
@@ -565,6 +565,15 @@ Notes:
 Notes:
 - we want to utilize the fact that the matrix is sorted column and row wise
 - so we can start from the top right corner and if the current element is greater than the target we move to the left (because we know that the target is not that column because it's sorted), otherwise we move down
+
+---
+### [99. Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree/)
+`binary tree` `inorder traversal`
+
+Notes:
+- we can use `inorder traversal` to get the elements in the sorted order
+- so in the `processing` part of the `inorder traversal` we check whether the current element is smaller than the previous element is we update our `last` and set `first` if not already set, also update our 'prev'
+- it's interesting how we can have whole array of misaligned elements but we only need to swap the first and the last one, so that why we always update the `last` element  
 ---
 ## 🔴 Hard
 ### [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) 
