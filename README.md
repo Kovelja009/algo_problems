@@ -362,7 +362,7 @@ Notes:
   # Microsoft 🏮 
   🟢 easy: 2
   
-  🟡 medium: 19
+  🟡 medium: 20
   
   🔴 hard: 9
 
@@ -558,6 +558,13 @@ Notes:
 Notes:
 - algorithm is something we did in `UUP` course `:-)`
 
+---
+### [240. Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/)
+`matrix` `binary search` `divide and conquer`
+
+Notes:
+- we want to utilize the fact that the matrix is sorted column and row wise
+- so we can start from the top right corner and if the current element is greater than the target we move to the left (because we know that the target is not that column because it's sorted), otherwise we move down
 ---
 ## 🔴 Hard
 ### [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) 
