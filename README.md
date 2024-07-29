@@ -362,7 +362,7 @@ Notes:
   # Microsoft 🏮 
   🟢 easy: 2
   
-  🟡 medium: 22
+  🟡 medium: 23
   
   🔴 hard: 9
 
@@ -583,6 +583,16 @@ Notes:
 - constraint is that we need to have `O(h)` space complexity
 - so we only write the `inorder traversal` function that goes to the leftmost element and then for each `next` call we pop the element from the stack and go to the right child of that element and add all the left children to the stack
 - `hasNext` is just checking whether the stack is empty
+
+---
+### [1405. Longest Happy String](https://leetcode.com/problems/longest-happy-string/)
+`greedy` `max heap`
+
+Notes:
+- we can use `max heap` to keep track of the characters and their frequencies
+- **if** we current most frequent character is the same as the last two characters in the result we can pop the second most frequent character and add it to the result
+- **else** we can add the most frequent character to the result
+- after that we need to update the frequencies and add the characters to the heap
 
 ---
 ## 🔴 Hard
