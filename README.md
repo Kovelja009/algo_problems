@@ -362,7 +362,7 @@ Notes:
   # Microsoft 🏮 
   🟢 easy: 2
   
-  🟡 medium: 23
+  🟡 medium: 24
   
   🔴 hard: 9
 
@@ -593,6 +593,15 @@ Notes:
 - **if** we current most frequent character is the same as the last two characters in the result we can pop the second most frequent character and add it to the result
 - **else** we can add the most frequent character to the result
 - after that we need to update the frequencies and add the characters to the heap
+
+---
+### [1615. Maximal Network Rank](https://leetcode.com/problems/maximal-network-rank/)
+`graps` `hash map`
+
+Notes:
+- store each road connection into one `set` both `(a,b)` and `(b,a)`
+- also for each city store the number of roads that are connected to that city
+- then for each pair of cities we can calculate the rank by adding the number of roads that are connected to the cities and subtracting 1 if the cities are connected
 
 ---
 ## 🔴 Hard
