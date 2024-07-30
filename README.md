@@ -360,9 +360,9 @@ Notes:
 
   
   # Microsoft 🏮 
-  🟢 easy: 2
+  🟢 easy: 3
   
-  🟡 medium: 24
+  🟡 medium: 25
   
   🔴 hard: 9
 
@@ -384,6 +384,14 @@ Notes:
 
 Notes:
 - just put message in the `hash map` where the value is `timestamp` and if the message is already in the `hash map` and the difference between the `timestamp` and the value is less than `10`, we return `False`, otherwise we update the `timestamp` and return `True`
+
+---
+### [1275. Find Winner on a Tic Tac Toe Game](https://leetcode.com/problems/find-winner-on-a-tic-tac-toe-game/)
+`list`
+
+Notes:
+- we can use 'list' to store all the winning combinations and then for each combination we check whether first player `A` has that combination, hen we check whether the second player `B` has that combination
+- if none of them has the winning combination we check whether the board is full and return `Draw` otherwise we return `Pending`
 
 ---
 ## 🟡 Medium
