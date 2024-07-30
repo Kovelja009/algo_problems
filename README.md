@@ -604,6 +604,20 @@ Notes:
 - then for each pair of cities we can calculate the rank by adding the number of roads that are connected to the cities and subtracting 1 if the cities are connected
 
 ---
+### [453. Minimum Moves to Equal Array Elements](https://leetcode.com/problems/minimum-moves-to-equal-array-elements/)
+`math` `array`
+
+Notes:
+- **First approach (outside of the box):**
+  - instead of incrementing `n-1` elements by 1, we can subtract 1 from every element except the smallest one
+  - so we can just find the smallest element and subtract it from all the elements
+- **Second approach (math):**
+  - formula is `s + m*(n-1) = n*x` where `s` is the sum of the array, `m` is the number of moves and `x` is the final number, `n` is the length of the array
+  - so 2 unknowns are `m` and `x`
+  - we can introduce another equation: `x = min + m`
+  - so then when we mix the equations we get `m = s - n*min`
+
+---
 ## 🔴 Hard
 ### [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) 
 `stack`
