@@ -362,7 +362,7 @@ Notes:
   # Microsoft 🏮 
   🟢 easy: 3
   
-  🟡 medium: 25
+  🟡 medium: 26
   
   🔴 hard: 9
 
@@ -624,6 +624,15 @@ Notes:
   - so 2 unknowns are `m` and `x`
   - we can introduce another equation: `x = min + m`
   - so then when we mix the equations we get `m = s - n*min`
+
+---
+### [1386. Cinema Seat Allocation](https://leetcode.com/problems/cinema-seat-allocation/)
+`hash map`
+
+Notes:
+- we can use `hash map` to store the seats that are already taken
+- then go through all the rows in the `hash map` and check the conditions for the seats
+- after that we get `m = n - len(hash_map)` which are rows that are completely free and `ans += m*2` because we can have 2 groups of 4 seats 
 
 ---
 ## 🔴 Hard
