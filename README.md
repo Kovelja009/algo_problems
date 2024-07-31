@@ -360,7 +360,7 @@ Notes:
 
   
   # Microsoft 🏮 
-  🟢 easy: 4
+  🟢 easy: 5
   
   🟡 medium: 29
   
@@ -398,6 +398,14 @@ Notes:
 
 Notes:
 - we can just add `i` and `-i` to the result array for `i` from `1` to `n//2` and if `n` is odd we can add `0` to the result
+
+---
+### [1822. Sign of the Product of an Array
+](https://leetcode.com/problems/sign-of-the-product-of-an-array/)
+`array`
+
+Notes:
+- we can just go through the array and count the number of negative numbers and if we come across `0` we can return `0` otherwise we can return `1` if the number of negative numbers is even and `-1` if the number of negative numbers is odd
 
 ---
 ## 🟡 Medium
