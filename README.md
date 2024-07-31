@@ -362,7 +362,7 @@ Notes:
   # Microsoft 🏮 
   🟢 easy: 4
   
-  🟡 medium: 27
+  🟡 medium: 28
   
   🔴 hard: 10
 
@@ -648,6 +648,15 @@ Notes:
 - we can use iterative approach here:
   - while `root` we just update `successor = root` if the `p.val < root.val` and move to the left
   - if `p.val >= root.val` we move to the right
+
+---
+### [1404. Number of Steps to Reduce a Number in Binary Representation to One](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/)
+`binary` `math`
+
+Notes:
+- idea is:
+  - if the last element is `0` we can just remove last element
+  - otherwise find the first `0` from the end and replace it with `1` and all the elements after that with `0` or we if don't find `0` we set string to `s = '1' + '0'*len(s)` 
 
 ---
 ## 🔴 Hard
