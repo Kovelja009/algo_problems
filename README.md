@@ -362,7 +362,7 @@ Notes:
   # Microsoft 🏮 
   🟢 easy: 4
   
-  🟡 medium: 28
+  🟡 medium: 29
   
   🔴 hard: 10
 
@@ -658,6 +658,17 @@ Notes:
   - if the last element is `0` we can just remove last element
   - otherwise find the first `0` from the end and replace it with `1` and all the elements after that with `0` or we if don't find `0` we set string to `s = '1' + '0'*len(s)` 
 
+---
+### [1653. Minimum Deletions to Make String Balanced](https://leetcode.com/problems/minimum-deletions-to-make-string-balanced/)
+`dp` `prefix sum`
+
+Notes:
+1. Using `prefix sum` -> ''O(n)' space complexity:
+    - we can calculate prefix sum of `b`'s and suffix sum of `a`'s
+    - solution is `ans = min(ans, b[i] + a[i]])`
+
+2. Using `dp` -> 'O(1)' space complexity:
+    - for each `a` we can either delete it or delete all the `b`'s before it -> `dp = min(dp+1, b_count)`
 ---
 ## 🔴 Hard
 ### [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) 
