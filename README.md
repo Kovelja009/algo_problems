@@ -360,7 +360,7 @@ Notes:
 
   
   # Microsoft 🏮 
-  🟢 easy: 3
+  🟢 easy: 4
   
   🟡 medium: 26
   
@@ -392,6 +392,12 @@ Notes:
 Notes:
 - we can use 'list' to store all the winning combinations and then for each combination we check whether first player `A` has that combination, hen we check whether the second player `B` has that combination
 - if none of them has the winning combination we check whether the board is full and return `Draw` otherwise we return `Pending`
+---
+### [1304. Find N Unique Integers Sum up to Zero](https://leetcode.com/problems/find-n-unique-integers-sum-up-to-zero/)
+`array`
+
+Notes:
+- we can just add `i` and `-i` to the result array for `i` from `1` to `n//2` and if `n` is odd we can add `0` to the result
 
 ---
 ## 🟡 Medium
