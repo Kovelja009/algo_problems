@@ -362,7 +362,7 @@ Notes:
   # Microsoft 🏮 
   🟢 easy: 4
   
-  🟡 medium: 26
+  🟡 medium: 27
   
   🔴 hard: 9
 
@@ -390,7 +390,7 @@ Notes:
 `list`
 
 Notes:
-- we can use 'list' to store all the winning combinations and then for each combination we check whether first player `A` has that combination, hen we check whether the second player `B` has that combination
+- we can use `list` to store all the winning combinations and then for each combination we check whether first player `A` has that combination, hen we check whether the second player `B` has that combination
 - if none of them has the winning combination we check whether the board is full and return `Draw` otherwise we return `Pending`
 ---
 ### [1304. Find N Unique Integers Sum up to Zero](https://leetcode.com/problems/find-n-unique-integers-sum-up-to-zero/)
@@ -639,6 +639,15 @@ Notes:
 - we can use `hash map` to store the seats that are already taken
 - then go through all the rows in the `hash map` and check the conditions for the seats
 - after that we get `m = n - len(hash_map)` which are rows that are completely free and `ans += m*2` because we can have 2 groups of 4 seats 
+
+---
+### [285. Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst/)
+`BST` `binary search`
+
+Notes:
+- we can use iterative approach here:
+  - while `root` we just update `successor = root` if the `p.val < root.val` and move to the left
+  - if `p.val >= root.val` we move to the right
 
 ---
 ## 🔴 Hard
