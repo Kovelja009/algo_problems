@@ -364,7 +364,7 @@ Notes:
   
   🟡 medium: 27
   
-  🔴 hard: 9
+  🔴 hard: 10
 
   </td>
   </tr>
@@ -754,3 +754,16 @@ Notes:
 - then we can use `queue` to deserialize the tree:
   - while we have elements:
     - we pop the element from the queue and if it is not `None` we create the left and right child and add them to the queue  
+
+---
+### [768. Max Chunks To Make Sorted II](https://leetcode.com/problems/max-chunks-to-make-sorted-ii/)
+`stack` `sorting`
+
+Notes:
+1. **Sorting** -> *O(nlogn)*:
+  - we can sort the array and then compare the sorted array with the original array and if elements are just the permutation of the original array we can increment the `chunks` otherwise we need to extend the chunk
+
+2. **Stack** -> *O(n)*:
+  - we can use stack to keep track of the maximum element up to the current element:
+    - `if curr >= stack.top()` we push the `curr` to the stack
+    - otherwise we pop elements from the stack until we find the element that is smaller than the `curr` and then we push the first element that we popped from the stack 
