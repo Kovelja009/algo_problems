@@ -364,7 +364,7 @@ Notes:
   
   🟡 medium: 31
   
-  🔴 hard: 10
+  🔴 hard: 11
 
   </td>
   </tr>
@@ -827,3 +827,15 @@ Notes:
   - we can use stack to keep track of the maximum element up to the current element:
     - `if curr >= stack.top()` we push the `curr` to the stack
     - otherwise we pop elements from the stack until we find the element that is smaller than the `curr` and then we push the first element that we popped from the stack 
+
+---
+### [2246. Longest Path With Different Adjacent Characters](https://leetcode.com/problems/longest-path-with-different-adjacent-characters/)
+`dfs` 'tree'
+
+Notes:
+- we use dfs to traverse the tree and for each node:
+  - we find longest and second longest path from the children such that the character is different from the current character
+  - then we set `ans = max(ans, longest + second_longest + 1)` and return `longest + 1`
+  - we consider `longest + second_longest + 1` because that might be greater than what parent cound construct with just `longest+1` path and we can't return `longest + second_longest + 1` because it wouldn't be path anymore
+
+- so solution is `max(ans, dfs(node))` 
