@@ -362,7 +362,7 @@ Notes:
   # Microsoft 🏮 
   🟢 easy: 5
   
-  🟡 medium: 29
+  🟡 medium: 30
   
   🔴 hard: 10
 
@@ -677,6 +677,16 @@ Notes:
 
 2. Using `dp` -> 'O(1)' space complexity:
     - for each `a` we can either delete it or delete all the `b`'s before it -> `dp = min(dp+1, b_count)`
+
+---
+### [1448. Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/)
+`bts` `dfs`
+
+Notes:
+- if the `current.val > max_val` we increment the counter and update the `max_val`
+- then we call function for the `left` and `right` child with cum result `0` and then **add results** from the `left` and `right` child to the result
+
+
 ---
 ## 🔴 Hard
 ### [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) 
