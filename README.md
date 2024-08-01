@@ -360,7 +360,7 @@ Notes:
 
   
   # Microsoft 🏮 
-  🟢 easy: 5
+  🟢 easy: 6
   
   🟡 medium: 31
   
@@ -406,6 +406,13 @@ Notes:
 
 Notes:
 - we can just go through the array and count the number of negative numbers and if we come across `0` we can return `0` otherwise we can return `1` if the number of negative numbers is even and `-1` if the number of negative numbers is odd
+
+---
+### [2259. Remove Digit From Number to Maximize Result](https://leetcode.com/problems/remove-digit-from-number-to-maximize-result/)
+`array`
+
+Notes:
+- as long as `digit` is greater than next element we keep searching for the next occurrence of the `digit` and once we find index where `digit` is smaller than the next element we can remove that occurrence of the `digit`
 
 ---
 ## 🟡 Medium
