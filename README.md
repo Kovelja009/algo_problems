@@ -362,7 +362,7 @@ Notes:
   # Microsoft 🏮 
   🟢 easy: 5
   
-  🟡 medium: 30
+  🟡 medium: 31
   
   🔴 hard: 10
 
@@ -685,6 +685,21 @@ Notes:
 Notes:
 - if the `current.val > max_val` we increment the counter and update the `max_val`
 - then we call function for the `left` and `right` child with cum result `0` and then **add results** from the `left` and `right` child to the result
+
+---
+### [1775. Equal Sum Arrays With Minimum Number of Operations](https://leetcode.com/problems/equal-sum-arrays-with-minimum-number-of-operations/)
+`greedy` `min heap` `max heap` `counting sort`
+
+Notes:
+1. Using `minheap` and `maxheap` -> `O(nlogn)` for constructing heaps:
+   - first we calculate the `diff` between the sums of the arrays
+   - then we store values of the greater array into `maxheap`
+   - then we store values of the smaller array into `minheap`
+   - while the `diff` is greater than `0`:
+     - if the `maxheap.top() - 1 > 6 - minheap.top()` we update `diff -= (maxheap.top() - 1)` and `pop` the element from the `maxheap`
+     - otherwise we update `diff -= 6 - minheap.top()` and `pop` the element from the `minheap`
+2. Using `counting sort` -> `O(n)`:
+   - essentially the same we just sort greater array in decreasing order and smaller array in increasing order using `counting sort` because we now that all values are in range `[1,6]`
 
 
 ---
