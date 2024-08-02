@@ -23,6 +23,7 @@
   - [Monotonic Stack](#monotonic-stack)
 - [Top Interview 150 🍜](#top-interview-150-)
   - [Array/String](#arraystring)
+  - [Two Pointers](#two-pointers)
 - [Microsoft 🏮](#microsoft-)
   - [🟢 Easy](#-easy)
   - [🟡 Medium](#-medium)
@@ -254,7 +255,7 @@ Notes:
   <td align="left">
 
   # Top Interview 150 🍜 
-  🟢 easy: 5
+  🟢 easy: 6
   
   🟡 medium: 5
   
@@ -338,7 +339,15 @@ Notes:
 - we keep track of the furthest we can jump
 - when `i` reaches `current end` we update the `current end` with the `farthest` and increment the `jumps` 
 
+---
+## Two Pointers
+---
+### [125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
 
+Notes:
+- we can just reverse the string and compare it with the original string
+  
+---
   
   <br>
   <img src="https://github.com/Kovelja009/algo_problems/assets/81018289/14bf71c7-96c0-453e-8d9e-4cf097b9cc90" alt="LeetCode 150" width="1500" />
