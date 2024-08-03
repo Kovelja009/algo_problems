@@ -255,7 +255,7 @@ Notes:
   <td align="left">
 
   # Top Interview 150 🍜 
-  🟢 easy: 6
+  🟢 easy: 7
   
   🟡 medium: 5
   
@@ -347,6 +347,12 @@ Notes:
 Notes:
 - we can just reverse the string and compare it with the original string
   
+---
+### [392. Is Subsequence](https://leetcode.com/problems/is-subsequence/)
+
+Notes:
+- we can have `s_pointer` which increases if `s[s_pointer] == t[i]` and if `s_pointer == len(s)` we can return `True`, otherwise we return `False`
+
 ---
   
   <br>
