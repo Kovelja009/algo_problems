@@ -340,6 +340,13 @@ Notes:
 - when `i` reaches `current end` we update the `current end` with the `farthest` and increment the `jumps` 
 
 ---
+### [274. H-Index](https://leetcode.com/problems/h-index/)
+
+Notes:
+- sort the array in descending order
+- then for each element we do `maxi=max(maxi, min(i+1, citations[i]))` because we know for sure that the number of citations is `i+1`
+- can be done in `O(n)` time complexity if we use `counting sort`, because maximum number of citations is `1000`
+---
 ## Two Pointers
 ---
 ### [125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
