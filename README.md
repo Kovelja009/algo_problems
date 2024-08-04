@@ -24,6 +24,7 @@
 - [Top Interview 150 🍜](#top-interview-150-)
   - [Array/String](#arraystring)
   - [Two Pointers](#two-pointers)
+  - [Hash Map](#hash-map)
 - [Microsoft 🏮](#microsoft-)
   - [🟢 Easy](#-easy)
   - [🟡 Medium](#-medium)
@@ -255,9 +256,9 @@ Notes:
   <td align="left">
 
   # Top Interview 150 🍜 
-  🟢 easy: 7
+  🟢 easy: 8
   
-  🟡 medium: 5
+  🟡 medium: 6
   
   🔴 hard: 0
 
@@ -346,6 +347,7 @@ Notes:
 - sort the array in descending order
 - then for each element we do `maxi=max(maxi, min(i+1, citations[i]))` because we know for sure that the number of citations is `i+1`
 - can be done in `O(n)` time complexity if we use `counting sort`, because maximum number of citations is `1000`
+
 ---
 ## Two Pointers
 ---
@@ -360,6 +362,14 @@ Notes:
 Notes:
 - we can have `s_pointer` which increases if `s[s_pointer] == t[i]` and if `s_pointer == len(s)` we can return `True`, otherwise we return `False`
 
+---
+## Hash Map
+---
+### [383. Ransom Note](https://leetcode.com/problems/ransom-note/) 
+
+Notes:
+- just put letters from `magazine` into `hashmap`
+  
 ---
   
   <br>
