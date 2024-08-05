@@ -256,9 +256,9 @@ Notes:
   <td align="left">
 
   # Top Interview 150 🍜 
-  🟢 easy: 8
+  🟢 easy: 9
   
-  🟡 medium: 6
+  🟡 medium: 8
   
   🔴 hard: 0
 
@@ -348,6 +348,38 @@ Notes:
 - then for each element we do `maxi=max(maxi, min(i+1, citations[i]))` because we know for sure that the number of citations is `i+1`
 - can be done in `O(n)` time complexity if we use `counting sort`, because maximum number of citations is `1000`
 
+---
+### [58. Length of Last Word](https://leetcode.com/problems/length-of-last-word/)
+
+Notes:
+- Hard work betrays none, but dreams betray many.
+
+---
+### [14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)
+
+Notes:
+- just find the len of the shortest string
+- then for each character in the shortest string we check whether all the strings have the same character at that index
+- if not we return the prefix
+- otherwise we append the character to the prefix
+
+---
+### [238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)
+
+Notes:
+1. `O(n)` time complexity and `O(n)` space complexity
+    - we can make two arrays `left` and `right` to make prefix and sufix products and then `ans[i] = left[i] * right[i+1]`
+2. `O(n)` time complexity and `O(1)` space complexity
+    - we can use the `output` array to store the prefix products and then multiply it with the `right` variable that stores the sufix product by going from the end after we have calculated the prefix product :)
+
+---
+### [134. Gas Station](https://leetcode.com/problems/gas-station/)
+
+Notes:
+- problem from the **Algorithms** course `:)`
+- if `sum(gas) < sum(cost)` we can't make the full circle so return `-1`
+- otherwise we can start from the first station and keep track of `curr_fuel` and `start_idx`
+- if after adding the gas `cur_fuel += gas[i] - cost[i]` we can't make it to the next station we update the `start_idx` to the next station and reset the `curr_fuel = 0` because we know that we can't start from the any of the stations between previous `start_idx` and `i`
 ---
 ## Two Pointers
 ---
