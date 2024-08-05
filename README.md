@@ -258,7 +258,7 @@ Notes:
   # Top Interview 150 🍜 
   🟢 easy: 9
   
-  🟡 medium: 8
+  🟡 medium: 9
   
   🔴 hard: 0
 
@@ -380,6 +380,13 @@ Notes:
 - if `sum(gas) < sum(cost)` we can't make the full circle so return `-1`
 - otherwise we can start from the first station and keep track of `curr_fuel` and `start_idx`
 - if after adding the gas `cur_fuel += gas[i] - cost[i]` we can't make it to the next station we update the `start_idx` to the next station and reset the `curr_fuel = 0` because we know that we can't start from the any of the stations between previous `start_idx` and `i`
+
+---
+### [12. Integer to Roman](https://leetcode.com/problems/integer-to-roman/)
+
+Notes:
+- we can just go through the `values` and `symbols` and add the symbols to the result as long as the number is greater than the value
+
 ---
 ## Two Pointers
 ---
