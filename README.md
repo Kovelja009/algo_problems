@@ -258,7 +258,7 @@ Notes:
   # Top Interview 150 🍜 
   🟢 easy: 9
   
-  🟡 medium: 9
+  🟡 medium: 10
   
   🔴 hard: 0
 
@@ -386,6 +386,16 @@ Notes:
 
 Notes:
 - we can just go through the `values` and `symbols` and add the symbols to the result as long as the number is greater than the value
+
+---
+### [6. Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion/)
+
+Notes:
+- we can start from the first row and go down until we reach the last row and then go up until we reach the first row
+- we can use the `direction` flag to know whether we are going up or down
+- we can use the `row` to keep track of the current row
+- we can use the `rows` array to store the characters for each row
+- and then we can just join the characters from the `rows` array
 
 ---
 ## Two Pointers
