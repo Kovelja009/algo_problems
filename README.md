@@ -398,6 +398,12 @@ Notes:
 - and then we can just join the characters from the `rows` array
 
 ---
+### [28. Find the Index of the First Occurrence in a String](https://leetcode.com/problems/implement-strstr/)
+
+Notes:
+- just go through the string and check whether the substring is equal to the needle for each index, you can stop if `len(haystack)  - len(needle) < i`
+
+---
 ## Two Pointers
 ---
 ### [125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
