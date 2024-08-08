@@ -258,7 +258,7 @@ Notes:
   # Top Interview 150 🍜 
   🟢 easy: 9
   
-  🟡 medium: 11
+  🟡 medium: 15
   
   🔴 hard: 0
 
@@ -424,6 +424,40 @@ Notes:
 - we can use two pointers, one for the beginning and one for the end
 - if the sum is greater than the target we decrement the `end` pointer, if the sum is less than the target we increment the `start` pointer, otherwise we return the indices
 - not completely sure why this works, but it does `:-)`
+
+---
+### [11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
+
+Notes:
+- we can use two pointers, one for the beginning and one for the end
+- we can calculate the area and update the maximum area
+- area is calculated as `min(height[i], height[j]) * (j-i)`
+- then we can move the pointer that has the smaller height
+
+---
+### [209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)
+
+Notes:
+- we can use two pointers, iterate through the array with `right` pointer and keep track of the sum
+- for each `right` pointer we increment the `sum` and while `sum >= target` we update the `min_len` and decrement the `sum` and increment the `left` pointer
+
+---
+### [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
+
+Notes:
+- we increase the window until the character is repeated
+- we know that the character is repeated because we store it in the `hash map`
+- then we increase the `left` pointer until we remove the repeating character from the `hash map`
+
+---
+## Matrix
+---
+### [36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)
+Notes:
+- we can use `hash map` to store the values of the rows, columns and the 3x3 squares
+- we can use the formula `box_index = (i // 3) * 3 + j // 3` to get the index of the 3x3 square
+- then we can just check whether the value is already in the `hash map`
+- if it is we return `False`, otherwise we add the value to the `hash map`
 
 ---
 ## Hash Map
