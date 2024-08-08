@@ -258,7 +258,7 @@ Notes:
   # Top Interview 150 🍜 
   🟢 easy: 9
   
-  🟡 medium: 10
+  🟡 medium: 11
   
   🔴 hard: 0
 
@@ -416,6 +416,14 @@ Notes:
 
 Notes:
 - we can have `s_pointer` which increases if `s[s_pointer] == t[i]` and if `s_pointer == len(s)` we can return `True`, otherwise we return `False`
+
+---
+### [167. Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)
+
+Notes:
+- we can use two pointers, one for the beginning and one for the end
+- if the sum is greater than the target we decrement the `end` pointer, if the sum is less than the target we increment the `start` pointer, otherwise we return the indices
+- not completely sure why this works, but it does `:-)`
 
 ---
 ## Hash Map
