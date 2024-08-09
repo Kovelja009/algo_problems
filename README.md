@@ -258,7 +258,7 @@ Notes:
   # Top Interview 150 🍜 
   🟢 easy: 9
   
-  🟡 medium: 15
+  🟡 medium: 18
   
   🔴 hard: 0
 
@@ -458,6 +458,37 @@ Notes:
 - we can use the formula `box_index = (i // 3) * 3 + j // 3` to get the index of the 3x3 square
 - then we can just check whether the value is already in the `hash map`
 - if it is we return `False`, otherwise we add the value to the `hash map`
+
+---
+### [73. Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)
+
+Notes:
+1. Solution using `O(m+n)` space complexity:
+    - we can use two sets `rows` and `columns` to store the indices of the rows and columns that need to be set to zero
+    - then we can just go through the matrix and add the indices to the sets
+    - after that we can just go through the matrix and set the rows and columns to zero
+2. Solution using `O(1)` space complexity:
+    - we can use the first row and the first column to store the information about the rows and columns that need to be set to zero
+    - we can use two flags `first_row` and `first_column` to store the information about the first row and the first column
+    - then we can just go through the inner part of the matrix and set the first row and the first column to zero
+    - after that we can just go through the matrix and set the rows and columns to zero
+    - if the `first_row` is `True` we can set the first row to zero and if the `first_column` is `True` we can set the first column to zero
+
+---
+### [289. Game of Life](https://leetcode.com/problems/game-of-life/)
+
+Notes:
+- for each cell we can count the number of live neighbours
+- then we mark the cell with `-1` or `2` if it needs to change state
+- then we can just go through the matrix and update the cells
+
+---
+### [48. Rotate Image](https://leetcode.com/problems/rotate-image/)
+
+Notes:
+- idea is to use some basic matrix transformations `:)`, in our case these are:
+1. transpose the matrix
+2. flip the matrix horizontally
 
 ---
 ## Hash Map
