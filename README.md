@@ -256,7 +256,7 @@ Notes:
   <td align="left">
 
   # Top Interview 150 🍜 
-  🟢 easy: 9
+  🟢 easy: 11
   
   🟡 medium: 18
   
@@ -497,7 +497,20 @@ Notes:
 
 Notes:
 - just put letters from `magazine` into `hashmap`
-  
+
+---
+### [205. Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)
+
+Notes:
+- we can use two `hash maps` to store the mapping of the characters from the first string to the second string and vice versa
+- if the mapping is not the same we return `False`
+
+---
+### [290. Word Pattern](https://leetcode.com/problems/word-pattern/)
+
+Notes:
+- can be done in the same way as the previous problem
+
 ---
   
   <br>
