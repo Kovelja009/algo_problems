@@ -512,6 +512,12 @@ Notes:
 - can be done in the same way as the previous problem
 
 ---
+### [242. Valid Anagram](https://leetcode.com/problems/valid-anagram/)
+
+Notes:
+- I'm not going there to die. I'm going to find out if I'm really alive.
+
+---
   
   <br>
   <img src="https://github.com/Kovelja009/algo_problems/assets/81018289/14bf71c7-96c0-453e-8d9e-4cf097b9cc90" alt="LeetCode 150" width="1500" />
