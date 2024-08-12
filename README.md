@@ -256,7 +256,7 @@ Notes:
   <td align="left">
 
   # Top Interview 150 🍜 
-  🟢 easy: 11
+  🟢 easy: 13
   
   🟡 medium: 18
   
@@ -516,6 +516,12 @@ Notes:
 
 Notes:
 - I'm not going there to die. I'm going to find out if I'm really alive.
+
+---
+### [1. Two Sum](https://leetcode.com/problems/two-sum/)
+
+Notes:
+- "Look at my eyes, Faye. One of them is a fake because I lost it in an accident. Since then, I've been seeing the past in one eye and the present in the other. So, I thought I could only see patches of reality, never the whole picture. I felt like I was watching a dream I could never wake up from. Before I knew it, the dream was over."
 
 ---
   
