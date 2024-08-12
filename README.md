@@ -258,7 +258,7 @@ Notes:
   # Top Interview 150 🍜 
   🟢 easy: 13
   
-  🟡 medium: 18
+  🟡 medium: 20
   
   🔴 hard: 0
 
@@ -522,6 +522,21 @@ Notes:
 
 Notes:
 - "Look at my eyes, Faye. One of them is a fake because I lost it in an accident. Since then, I've been seeing the past in one eye and the present in the other. So, I thought I could only see patches of reality, never the whole picture. I felt like I was watching a dream I could never wake up from. Before I knew it, the dream was over."
+
+---
+### [49. Group Anagrams](https://leetcode.com/problems/group-anagrams/)
+
+Notes:
+- we can sort every word and use it as a key in the `hash map` where value is the list of the words that are anagrams `:-)`
+
+---
+### [128. Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
+
+Notes:
+- use 'hash map' to store all the elements, where the value is `1`
+- for each element while there is by one smaller:
+  - we increment the current `cnt` by the value of the current element, set to `0` value of that element 
+- after while loop we update the `maxi` with the maximum of the current `cnt` and the `maxi`
 
 ---
   
