@@ -256,7 +256,7 @@ Notes:
   <td align="left">
 
   # Top Interview 150 🍜 
-  🟢 easy: 13
+  🟢 easy: 16
   
   🟡 medium: 20
   
@@ -537,6 +537,29 @@ Notes:
 - for each element while there is by one smaller:
   - we increment the current `cnt` by the value of the current element, set to `0` value of that element 
 - after while loop we update the `maxi` with the maximum of the current `cnt` and the `maxi`
+
+---
+### [202. Happy Number](https://leetcode.com/problems/happy-number/)
+
+Notes:
+- just build the number and if the number is already in the `hash map` we return `False`, otherwise we add the number to the `hash map`, and if we get to `1` we return `True`
+
+---
+### [219. Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)
+
+Notes:
+- we can use `hash map` to store the index of the element
+- when we get to the element that is already in the `hash map` we can check whether the difference between the current index and the index in the `hash map` is less than or equal to `k`, if it is we return `True`, otherwise we update the index in the `hash map`
+
+---
+## Intervals
+---
+### [228. Summary Ranges](https://leetcode.com/problems/summary-ranges/)
+
+Notes:
+- we can use two pointers, one for the beginning and one for the end
+- if the `curr != end+1` then we append it to the result and
+reset `start = end = curr`
 
 ---
   
