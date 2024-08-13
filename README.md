@@ -258,7 +258,7 @@ Notes:
   # Top Interview 150 🍜 
   🟢 easy: 16
   
-  🟡 medium: 20
+  🟡 medium: 21
   
   🔴 hard: 0
 
@@ -560,6 +560,14 @@ Notes:
 - we can use two pointers, one for the beginning and one for the end
 - if the `curr != end+1` then we append it to the result and
 reset `start = end = curr`
+
+---
+### [57. Insert Interval](https://leetcode.com/problems/insert-interval/)
+
+Notes:
+- while newInterval start is greater then the end of the current interval we can add the current interval to the result
+- then we can merge the intervals: while the newInterval end is >= the start of the current interval we can update the newInterval start and end
+- after that we can add the newInterval to the result and the rest of the intervals 
 
 ---
   
