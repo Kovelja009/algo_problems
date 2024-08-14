@@ -256,9 +256,9 @@ Notes:
   <td align="left">
 
   # Top Interview 150 🍜 
-  🟢 easy: 16
+  🟢 easy: 17
   
-  🟡 medium: 21
+  🟡 medium: 24
   
   🔴 hard: 0
 
@@ -568,6 +568,39 @@ Notes:
 - while newInterval start is greater then the end of the current interval we can add the current interval to the result
 - then we can merge the intervals: while the newInterval end is >= the start of the current interval we can update the newInterval start and end
 - after that we can add the newInterval to the result and the rest of the intervals 
+  
+---
+## Stack
+---
+### [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
+
+Notes:
+- we can use the stack to store the opening brackets
+- then for each closing bracket we can check whether the stack is empty or the top of the stack is not the corresponding opening bracket
+- if it is we return `False`, otherwise we pop the element from the stack
+- at the end we return whether the stack is empty
+
+---
+### [71. Simplify Path](https://leetcode.com/problems/simplify-path/)
+
+Notes:
+- we can split the path by `/` and then for each element we can check whether it is `.` or `..` or empty
+- if it is `..` we can pop the element from the stack, if it is `.` we can skip it, otherwise we can add it to the stack
+- at the end we can join the elements from the stack with `/`
+
+---
+### [155. Min Stack](https://leetcode.com/problems/min-stack/)
+
+Notes:
+- very clever idea -> stack of tuples where the second element is the minimum element up to that point `:)`
+
+---
+### [150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)
+
+Notes:
+- done it in the **Algorithms** course `:)`
+- we can use the stack to store the numbers
+- if it is the operator we can pop the last two numbers from the stack and apply the operator, after which we can push the result to the stack
 
 ---
   
