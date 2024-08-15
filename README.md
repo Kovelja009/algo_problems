@@ -626,6 +626,19 @@ Notes:
 - then connect the `left-1.next` to the `new start` and the `right` to the `old start`
 
 ---
+### [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
+
+Notes:
+1. Approach 1: two passes
+     - reverse the list
+     - remove the `n-th` element
+     - reverse the list again
+2. Approach 2: one pass
+     - move right pointer `n` steps
+     - move both pointers until the right pointer reaches the end
+     - remove the `n-th` element
+
+---
   
   <br>
   <img src="https://github.com/Kovelja009/algo_problems/assets/81018289/14bf71c7-96c0-453e-8d9e-4cf097b9cc90" alt="LeetCode 150" width="1500" />
