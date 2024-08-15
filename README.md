@@ -258,7 +258,7 @@ Notes:
   # Top Interview 150 🍜 
   🟢 easy: 17
   
-  🟡 medium: 24
+  🟡 medium: 25
   
   🔴 hard: 0
 
@@ -601,6 +601,29 @@ Notes:
 - done it in the **Algorithms** course `:)`
 - we can use the stack to store the numbers
 - if it is the operator we can pop the last two numbers from the stack and apply the operator, after which we can push the result to the stack
+
+---
+## Linked List
+---
+### [138. Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/)
+
+Notes:
+1. Approach: using `hash map` -> `O(n)` space complexity
+    - we can use the `hash map` to store the mapping of the original node to the new node
+    - then we can just go through the original list and create the new list
+    - after that we can just go through the original list and update the `next` and `random` pointers
+2. Approach: interweaving lists -> `O(1)` space complexity
+   - we can interweave the original list and the new list
+   - then we can update the `random` pointers for the new list 
+   - after that we can separate the original list and the new list
+
+---
+### [92. Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/)
+
+Notes:
+- we can use the `dummy` node to point to the `head` and then find the `left-1` node
+- reverse the list from `left` to `right` in the function `reverse` where you also connect the `left.next` to the old `right.next` and then return value of the `new start` of the reversed list
+- then connect the `left-1.next` to the `new start` and the `right` to the `old start`
 
 ---
   
