@@ -256,9 +256,9 @@ Notes:
   <td align="left">
 
   # Top Interview 150 🍜 
-  🟢 easy: 17
+  🟢 easy: 18
   
-  🟡 medium: 25
+  🟡 medium: 26
   
   🔴 hard: 0
 
@@ -637,6 +637,35 @@ Notes:
      - move right pointer `n` steps
      - move both pointers until the right pointer reaches the end
      - remove the `n-th` element
+
+---
+### [82. Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/)
+
+Notes:
+- we can use the `dummy` node to point to the `head` 
+- then we can use the `prev` node to keep track of the previous node
+- `curr` node is `head`
+- if `curr.val == curr.prev.val` or 'curr.val == curr.next.val' we set `curr.val = -101`
+- then we can just go through the list and remove the nodes with the value `-101` 
+
+---
+### [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)
+
+Notes:
+1. Approach:
+   - just set `val` for each node to `maxsize` and if we come across the node with that value we return `True`, otherwise we return `False`
+2. Approach:
+   - other approach is to use two pointers, one that moves one step at a time and one that moves two steps at a time, if they meet we return `True`, otherwise we return `False`
+
+---
+## Binary Tree General
+---
+### [100. Same Tree](https://leetcode.com/problems/same-tree/)
+
+Notes:
+- we can use the `recursive` approach where we check whether the values of the nodes are the same and then we check the left and right subtrees
+- also need to check whether both have some values
+- and return `left and right`
 
 ---
   
