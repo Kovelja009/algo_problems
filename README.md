@@ -668,6 +668,16 @@ Notes:
 - and return `left and right`
 
 ---
+### [105. Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
+
+Notes:
+- we can use the `recursive` approach
+- we pop first element from preorder as a `root` 
+- then we find the index of the `root` in the inorder
+- then we recursively call the function for the left and right subtrees where we pass the `preorder` normaly and `inorder` from the beginning to the index of the `root` for left subtree and from the index of the `root` to the end for the right subtree
+- finding index of the `root` in the `inorder` can be done using the `hash map` where the key is the value and the value is the index so we reduce the time complexity from O(n^2^) to O(n)
+
+---
   
   <br>
   <img src="https://github.com/Kovelja009/algo_problems/assets/81018289/14bf71c7-96c0-453e-8d9e-4cf097b9cc90" alt="LeetCode 150" width="1500" />
