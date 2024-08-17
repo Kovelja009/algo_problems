@@ -258,7 +258,7 @@ Notes:
   # Top Interview 150 🍜 
   🟢 easy: 18
   
-  🟡 medium: 26
+  🟡 medium: 29
   
   🔴 hard: 0
 
@@ -676,6 +676,32 @@ Notes:
 - then we find the index of the `root` in the inorder
 - then we recursively call the function for the left and right subtrees where we pass the `preorder` normaly and `inorder` from the beginning to the index of the `root` for left subtree and from the index of the `root` to the end for the right subtree
 - finding index of the `root` in the `inorder` can be done using the `hash map` where the key is the value and the value is the index so we reduce the time complexity from O(n^2^) to O(n)
+  
+---
+### [106. Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)
+
+Notes:
+- similar to the previous problem:
+  - we pop the last element from the `postorder` as a `root`
+  - then we find the index of the `root` in the `inorder`
+  - then we recursively call, but first for the right subtree and then for the left subtree 
+
+---
+### [117. Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)
+
+Notes:
+1. Approach: O(logn) space complexity using `hash map`
+    - we can for every level store most `left node` in the `hash map`, and then when we again reach the same level we can connect the `left node` to the current node and set current node as the `left node` in the `hash map`
+
+2. Approach: O(1) space complexity using `scanner` node
+    - we can use the `scanner` node:
+       - while we have `scanner`:
+         - we set `scanner` to the `left` child or right child of the `scanner`
+         - else we set `scanner` to the `next` node
+    - then our `right.next = scanner`
+    - then our `lefg.next = right if right else scanner`
+    - recursively call the function first for the right and then for the left child  
+
 
 ---
   
