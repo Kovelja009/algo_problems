@@ -706,7 +706,7 @@ Notes:
 ### [226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)
 
 Notes:
--
+- ”Even if you put aside regret, you´ll end up feeling it anyway. Right now, you need to make sure you grasp this good feeling and never forget it.”
 
 ---
   
