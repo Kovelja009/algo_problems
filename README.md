@@ -256,7 +256,7 @@ Notes:
   <td align="left">
 
   # Top Interview 150 🍜 
-  🟢 easy: 18
+  🟢 easy: 19
   
   🟡 medium: 29
   
@@ -702,6 +702,11 @@ Notes:
     - then our `lefg.next = right if right else scanner`
     - recursively call the function first for the right and then for the left child  
 
+---
+### [226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)
+
+Notes:
+-
 
 ---
   
