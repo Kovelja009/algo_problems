@@ -256,9 +256,9 @@ Notes:
   <td align="left">
 
   # Top Interview 150 🍜 
-  🟢 easy: 19
+  🟢 easy: 22
   
-  🟡 medium: 29
+  🟡 medium: 31
   
   🔴 hard: 0
 
@@ -707,6 +707,50 @@ Notes:
 
 Notes:
 - ”Even if you put aside regret, you´ll end up feeling it anyway. Right now, you need to make sure you grasp this good feeling and never forget it.”
+
+---
+### [114. Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/)
+
+Notes:
+1. Approach: using `queue` -> `O(n)` space complexity
+    - we can use the `queue` to store the nodes in the `preorder` traversal
+    - then we can just go through the `queue` and update the `left` and `right` pointers
+
+2. Approach: using `recursive` -> `O(1)` space complexity
+    - store the `prev` node
+    - then we can use the `recursive` approach where we first flatten the `right` subtree and then the `left` subtree
+    - then `root.right = prev` and `root.left = None`
+    - then `prev = root`
+
+---
+### [129. Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/)
+
+Notes:
+- traverse the tree in `preorder` and for each node we update `curr = curr*10 + node.val`
+- if the node is the leaf we add the `curr` to the `sum`
+
+---
+### [222. Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/)
+
+Notes:
+1. Approach: using `recursive` -> `O(logn[logn])` time complexity
+    - we can use the `recursive` approach where we first find the height of the left subtree and the right subtree
+    - if the height of the left subtree is equal to the height of the right subtree we can return `2^height - 1`
+    - otherwise we can recursively call the function for the left and right subtree and add `1` for the root
+
+---
+### [101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree/)
+
+Notes:
+- interesting approach where we use the `recursive` function that takes two nodes and checks whether they are symmetric
+- if `rval == lval` and `isSymmetric(left.right, right.left)` and `isSymmetric(left.left, right.right)` we return `True`, otherwise we return `False`
+
+---
+### [112. Path Sum](https://leetcode.com/problems/path-sum/)
+
+Notes:
+- we can use the `recursive` approach where we subtract the value of the current node from the `sum` and recursively call the function for the left and right child
+- if we reach the leaf and the `sum` is `0` we return `True`, otherwise we return `False`
 
 ---
   
