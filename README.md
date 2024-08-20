@@ -753,6 +753,20 @@ Notes:
 - if we reach the leaf and the `sum` is `0` we return `True`, otherwise we return `False`
 
 ---
+### [104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
+
+Notes:
+- Freedom can be found at the bottom of your heart.
+
+---
+### [236. Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)
+
+Notes:
+- we can use the `recursive` approach where we first check whether the `root` is equal to `p` or `q` and if it is we return the `root`
+- else we call for the left and right child and if we get the `left` and `right` we return the `root`
+- if we get only the `left` or `right` we return the `left` or `right`
+
+---
   
   <br>
   <img src="https://github.com/Kovelja009/algo_problems/assets/81018289/14bf71c7-96c0-453e-8d9e-4cf097b9cc90" alt="LeetCode 150" width="1500" />
