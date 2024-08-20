@@ -669,6 +669,13 @@ Notes:
 - then set the `tail.next` to the `head`
 
 ---
+### [86. Partition List](https://leetcode.com/problems/partition-list/)
+
+Notes:
+- make two lists, one for the smaller elements and one for the greater elements
+- then connect the tale of the smaller list to the head of the greater list
+
+---
 ## Binary Tree General
 ---
 ### [100. Same Tree](https://leetcode.com/problems/same-tree/)
