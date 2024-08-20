@@ -258,7 +258,7 @@ Notes:
   # Top Interview 150 🍜 
   🟢 easy: 22
   
-  🟡 medium: 31
+  🟡 medium: 32
   
   🔴 hard: 0
 
@@ -656,6 +656,17 @@ Notes:
    - just set `val` for each node to `maxsize` and if we come across the node with that value we return `True`, otherwise we return `False`
 2. Approach:
    - other approach is to use two pointers, one that moves one step at a time and one that moves two steps at a time, if they meet we return `True`, otherwise we return `False`
+
+---
+### [61. Rotate List](https://leetcode.com/problems/rotate-list/)
+
+Notes:
+- count the length of the list
+- `k = k % length`
+- calc `moves = n - k`
+- move the `curr` to the `moves` position
+- set the `new_head` to the `curr.next` and set the `curr.next` to `None`
+- then set the `tail.next` to the `head`
 
 ---
 ## Binary Tree General
