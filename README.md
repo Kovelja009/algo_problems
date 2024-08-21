@@ -256,9 +256,9 @@ Notes:
   <td align="left">
 
   # Top Interview 150 🍜 
-  🟢 easy: 23
+  🟢 easy: 24
   
-  🟡 medium: 34
+  🟡 medium: 35
   
   🔴 hard: 0
 
@@ -674,6 +674,24 @@ Notes:
 Notes:
 - make two lists, one for the smaller elements and one for the greater elements
 - then connect the tale of the smaller list to the head of the greater list
+
+---
+### [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
+
+Notes:
+- algo from the **Algorithms** course `:)`
+- while both lists are not empty we compare the values of the nodes and connect the smaller one to the `curr` node
+- while first list is not empty we connect the rest of the first list to the `curr` node
+- while the second list is not empty we connect the rest of the second list to the `curr` node
+
+---
+### [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)
+
+Notes:
+- while we have both lists we add the values of the nodes and the carry and connect the result to the `curr` node
+- while we have the first list we add the values from the first list with the carry and connect the result to the `curr` node
+- while we have the second list we add the values from the second list with the carry and connect the result to the `curr` node
+- if we have the carry at the end we connect the carry to the `curr` node
 
 ---
 ## Binary Tree General
