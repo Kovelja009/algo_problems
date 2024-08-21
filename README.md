@@ -258,7 +258,7 @@ Notes:
   # Top Interview 150 🍜 
   🟢 easy: 23
   
-  🟡 medium: 33
+  🟡 medium: 34
   
   🔴 hard: 0
 
@@ -792,6 +792,17 @@ Notes:
 Notes:
 "Dedication Is A Talent All On Its Own."
 
+---
+### [199. Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/)
+
+Notes:
+- put every level in the `hash map` and then for each level we can take the last element
+
+---
+### [102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)
+
+Notes:
+- literally just put everything into `hash map` 
 
 ---
   
