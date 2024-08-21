@@ -256,9 +256,9 @@ Notes:
   <td align="left">
 
   # Top Interview 150 🍜 
-  🟢 easy: 22
+  🟢 easy: 23
   
-  🟡 medium: 32
+  🟡 medium: 33
   
   🔴 hard: 0
 
@@ -783,6 +783,15 @@ Notes:
 - we can use the `recursive` approach where we first check whether the `root` is equal to `p` or `q` and if it is we return the `root`
 - else we call for the left and right child and if we get the `left` and `right` we return the `root`
 - if we get only the `left` or `right` we return the `left` or `right`
+
+---
+## Binary Tree BFS
+---
+### [637. Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/)
+
+Notes:
+"Dedication Is A Talent All On Its Own."
+
 
 ---
   
