@@ -850,11 +850,22 @@ Notes:
   - for the right child we update the `min` to the value of the current node
 
 ---
+## Graph General
+---
 ### [130. Surrounded Regions](https://leetcode.com/problems/surrounded-regions/)
 
 Notes:
 - mark all boundary regions `O` to `*`
 - then mark all `O` to `X` and `*` to `O`
+
+---
+### 133. Clone Graph
+
+Notes:
+- we can use the `hash map` to store the mapping of the original node to the new node
+- we just use dfs to traverse the graph and create the new nodes
+- if `node` not in `hash map` we create the new node and put it in the `hash map`, so then we go through the neighbors and recursively call the function
+
 
 ---
   
