@@ -258,7 +258,7 @@ Notes:
   # Top Interview 150 🍜 
   🟢 easy: 24
   
-  🟡 medium: 35
+  🟡 medium: 37
   
   🔴 hard: 0
 
@@ -838,6 +838,23 @@ Notes:
 - do the `inorder` traversal and every step decrement the `k`
 - if k is `0` we return the value of the node
 - otherwise we return the value of the left or right child (whoevers value is greater, if we haven't found result we return -1 and range for nodes is `>= 0`)
+
+---
+### [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
+
+Notes:
+- done it in the **Algorithms** course `:)`
+- for each node we check whether the value is in the range of the `min` and `max` and recursively call the function for the left and right child
+- for each recursive call we update the `min` and `max` values in the following way:
+  - for the left child we update the `max` to the value of the current node
+  - for the right child we update the `min` to the value of the current node
+
+---
+### [130. Surrounded Regions](https://leetcode.com/problems/surrounded-regions/)
+
+Notes:
+- mark all boundary regions `O` to `*`
+- then mark all `O` to `X` and `*` to `O`
 
 ---
   
