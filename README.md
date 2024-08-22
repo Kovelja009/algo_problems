@@ -823,6 +823,23 @@ Notes:
 - literally just put everything into `hash map` 
 
 ---
+## Binary Search Tree
+---
+### [530. Minimum Absolute Difference in BST](https://leetcode.com/problems/minimum-absolute-difference-in-bst/)
+
+Notes:
+- just do the `inorder` traversal and keep track of the prev node
+- then for each node we can calculate the difference between `curr` and `prev` and update the `min_diff`
+
+---
+### [230. Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)
+
+Notes:
+- do the `inorder` traversal and every step decrement the `k`
+- if k is `0` we return the value of the node
+- otherwise we return the value of the left or right child (whoevers value is greater, if we haven't found result we return -1 and range for nodes is `>= 0`)
+
+---
   
   <br>
   <img src="https://github.com/Kovelja009/algo_problems/assets/81018289/14bf71c7-96c0-453e-8d9e-4cf097b9cc90" alt="LeetCode 150" width="1500" />
