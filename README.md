@@ -258,7 +258,7 @@ Notes:
   # Top Interview 150 🍜 
   🟢 easy: 24
   
-  🟡 medium: 38
+  🟡 medium: 39
   
   🔴 hard: 0
 
@@ -872,6 +872,14 @@ Notes:
 Notes:
 - we can use the `hash map` to store the mapping of the course to the list of the courses that depend on that course
 - if we detect the cycle we return `False`, otherwise we return `True`
+
+---
+## Graph BFS
+---
+### [909. Snakes and Ladders](https://leetcode.com/problems/snakes-and-ladders/)
+
+Notes:
+- neetcode 🚀 [here](https://www.youtube.com/watch?v=6lH4nO3JfLk)
 
 ---
   
