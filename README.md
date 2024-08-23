@@ -258,7 +258,7 @@ Notes:
   # Top Interview 150 🍜 
   🟢 easy: 24
   
-  🟡 medium: 37
+  🟡 medium: 38
   
   🔴 hard: 0
 
@@ -866,6 +866,12 @@ Notes:
 - we just use dfs to traverse the graph and create the new nodes
 - if `node` not in `hash map` we create the new node and put it in the `hash map`, so then we go through the neighbors and recursively call the function
 
+---
+### [207. Course Schedule](https://leetcode.com/problems/course-schedule/)
+
+Notes:
+- we can use the `hash map` to store the mapping of the course to the list of the courses that depend on that course
+- if we detect the cycle we return `False`, otherwise we return `True`
 
 ---
   
