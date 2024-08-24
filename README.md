@@ -258,7 +258,7 @@ Notes:
   # Top Interview 150 🍜 
   🟢 easy: 24
   
-  🟡 medium: 40
+  🟡 medium: 41
   
   🔴 hard: 0
 
@@ -888,6 +888,15 @@ Notes:
 - at every step we want to change every character in the string and check whether it is in the `bank` and if it is not in the `visited` 
 - if condition is met we add it to the `queue` and `visited`
 - if we reach the `end` we return the `level`, otherwise we return `-1`
+
+---
+## Trie
+---
+### [211. Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure/)
+
+Notes:
+- we can use the `trie` to store the words
+- for the `search` function we can just modify search function inside the `trie` 
 
 ---
   
