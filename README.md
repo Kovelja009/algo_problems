@@ -899,6 +899,14 @@ Notes:
 - for the `search` function we can just modify search function inside the `trie` 
 
 ---
+## Binary Search
+---
+### [35. Search Insert Position]
+
+Notes:
+
+
+---
   
   <br>
   <img src="https://github.com/Kovelja009/algo_problems/assets/81018289/14bf71c7-96c0-453e-8d9e-4cf097b9cc90" alt="LeetCode 150" width="1500" />
