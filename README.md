@@ -258,7 +258,7 @@ Notes:
   # Top Interview 150 🍜 
   🟢 easy: 24
   
-  🟡 medium: 41
+  🟡 medium: 42
   
   🔴 hard: 0
 
@@ -904,7 +904,15 @@ Notes:
 ### [35. Search Insert Position]
 
 Notes:
+- we can use the `binary search` to find the index of the element or the index where the element should be inserted
 
+---
+## Backtracking
+---
+### [77. Combinations](https://leetcode.com/problems/combinations/)
+
+Notes:
+- we can use the `backtracking` approach where we add the element to the `temp` and recursively call the function for the next element where we say it to just add numbers  >= `digit+1` where `digit` is current num that we added -> `1234 = 4321` 
 
 ---
   
