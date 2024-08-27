@@ -256,7 +256,7 @@ Notes:
   <td align="left">
 
   # Top Interview 150 🍜 
-  🟢 easy: 24
+  🟢 easy: 25
   
   🟡 medium: 42
   
@@ -913,6 +913,14 @@ Notes:
 
 Notes:
 - we can use the `backtracking` approach where we add the element to the `temp` and recursively call the function for the next element where we say it to just add numbers  >= `digit+1` where `digit` is current num that we added -> `1234 = 4321` 
+
+---
+## Bit Manipulation
+---
+### [67. Add Binary](https://leetcode.com/problems/add-binary/)
+
+Notes:
+- Leave tomorrow's problems to tomorrow's you.
 
 ---
   
