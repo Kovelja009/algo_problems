@@ -923,6 +923,13 @@ Notes:
 - Leave tomorrow's problems to tomorrow's you.
 
 ---
+### [190. Reverse Bits](https://leetcode.com/problems/reverse-bits/)
+
+Notes:
+- freaking bit manipulation `:>`
+- we extract bit by doing `bit = (n>>i) & 1` and then we set the bit by doing `res |= bit << (31-i)`
+
+---
   
   <br>
   <img src="https://github.com/Kovelja009/algo_problems/assets/81018289/14bf71c7-96c0-453e-8d9e-4cf097b9cc90" alt="LeetCode 150" width="1500" />
