@@ -256,11 +256,11 @@ Notes:
   <td align="left">
 
   # Top Interview 150 🍜 
-  🟢 easy: 25
+  🟢 easy: 26
   
   🟡 medium: 42
   
-  🔴 hard: 0
+  🔴 hard: 1
 
   </td>
   </tr>
@@ -888,6 +888,14 @@ Notes:
 - at every step we want to change every character in the string and check whether it is in the `bank` and if it is not in the `visited` 
 - if condition is met we add it to the `queue` and `visited`
 - if we reach the `end` we return the `level`, otherwise we return `-1`
+
+---
+### [815. Bus Routes][https://leetcode.com/problems/bus-routes/]
+
+Notes:
+- we can use the `hash map` to store the mapping of the stop to the list of the buses that stop at that stop
+- then we can use the `queue` to store the `curr_stop` and `buses_taken`, and sets for visited stops and buses
+- then we can just go through the buses that stop at the `curr_stop` and for each bus that we haven't visited we go through the stops that the bus stops at and if we haven't visited the stop we add it to the `queue` and `visited_stops`
 
 ---
 ## Trie
