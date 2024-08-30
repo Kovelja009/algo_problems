@@ -258,7 +258,7 @@ Notes:
   # Top Interview 150 🍜 
   🟢 easy: 26
   
-  🟡 medium: 42
+  🟡 medium: 44
   
   🔴 hard: 1
 
@@ -921,6 +921,22 @@ Notes:
 
 Notes:
 - we can use the `backtracking` approach where we add the element to the `temp` and recursively call the function for the next element where we say it to just add numbers  >= `digit+1` where `digit` is current num that we added -> `1234 = 4321` 
+
+---
+### [46. Permutations](https://leetcode.com/problems/permutations/)
+
+Notes:
+- first we can make the `hash map` where the key is the number and the value is whether the number is used
+- then we can use the `backtracking` approach where we add the number to the `temp` and mark it as used and recursively call the function for the next number after which we set it to unused again
+- if the length of the `temp` is equal to the length of the `nums` we add the `temp` to the `result`
+
+---
+### [39. Combination Sum] 
+
+Notes:
+- we can use the `backtracking` approach where we check whether sum is greater than the target and if it is we return
+- if the sum is equal to the target we add the `temp` to the `result`
+- otherwise we iterate through the candidates and add the number to the `temp` and recursively call the function for the next number with `i` index as a start and after call we remove the last element from the `temp`
 
 ---
 ## Bit Manipulation
