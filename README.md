@@ -939,6 +939,12 @@ Notes:
 - otherwise we iterate through the candidates and add the number to the `temp` and recursively call the function for the next number with `i` index as a start and after call we remove the last element from the `temp`
 
 ---
+### [22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)
+
+Notes:
+- A man, slave to gold, holds the whip... and beats the slave he bought with the gold as if to claim that he is the master. He just doesn’t see it for himself. Every living human being is a slave to something.
+
+---
 ## Bit Manipulation
 ---
 ### [67. Add Binary](https://leetcode.com/problems/add-binary/)
