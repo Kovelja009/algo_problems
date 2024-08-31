@@ -256,9 +256,9 @@ Notes:
   <td align="left">
 
   # Top Interview 150 🍜 
-  🟢 easy: 26
+  🟢 easy: 27
   
-  🟡 medium: 45
+  🟡 medium: 46
   
   🔴 hard: 1
 
@@ -964,6 +964,26 @@ Notes:
 Notes:
 - freaking bit manipulation `:>`
 - we extract bit by doing `bit = (n>>i) & 1` and then we set the bit by doing `res |= bit << (31-i)`
+
+---
+## Divide & Conquer
+---
+### [108. Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)
+
+Notes:
+- if left is greater than right we return `None`
+- calculate the middle element and create the root node
+- then recursively call the function for the left (left, mid-1) and right (mid+1, right) child
+
+---
+### [148. Sort List](https://leetcode.com/problems/sort-list/)
+
+Notes:
+- freaking merge sort `:>`
+- split the list in the middle
+- recursively call the function for the left and right half
+- then merge the left and right half and return the result
+- by merging we compare the values of the two sorted lists and make new list which is sorted
 
 ---
   
