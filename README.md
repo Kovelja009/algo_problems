@@ -258,7 +258,7 @@ Notes:
   # Top Interview 150 🍜 
   🟢 easy: 26
   
-  🟡 medium: 44
+  🟡 medium: 45
   
   🔴 hard: 1
 
@@ -943,6 +943,12 @@ Notes:
 
 Notes:
 - A man, slave to gold, holds the whip... and beats the slave he bought with the gold as if to claim that he is the master. He just doesn’t see it for himself. Every living human being is a slave to something.
+
+---
+### [79. Word Search](https://leetcode.com/problems/word-search/)
+
+Notes:
+- we can use the `backtracking` approach where we go through the board and for each cell that is equal to the first character of the word we call `backtrack` function where we mark the cell as visited and recursively call the function for the next character if it is equal to the next character in the word and is not visited
 
 ---
 ## Bit Manipulation
