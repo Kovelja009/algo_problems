@@ -256,7 +256,7 @@ Notes:
   <td align="left">
 
   # Top Interview 150 🍜 
-  🟢 easy: 27
+  🟢 easy: 28
   
   🟡 medium: 46
   
@@ -965,6 +965,11 @@ Notes:
 - freaking bit manipulation `:>`
 - we extract bit by doing `bit = (n>>i) & 1` and then we set the bit by doing `res |= bit << (31-i)`
 
+---
+### [191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)
+
+Notes:
+- Some things are beautiful exactly because they're unobtainable
 ---
 ## Divide & Conquer
 ---
