@@ -258,7 +258,7 @@ Notes:
   # Top Interview 150 🍜 
   🟢 easy: 28
   
-  🟡 medium: 46
+  🟡 medium: 47
   
   🔴 hard: 1
 
@@ -989,6 +989,15 @@ Notes:
 - recursively call the function for the left and right half
 - then merge the left and right half and return the result
 - by merging we compare the values of the two sorted lists and make new list which is sorted
+
+---
+### [427. Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree/)
+
+Notes:
+- make function that takes top left and bottom right corner of the grid and return the node
+- check whether the grid is the same and if it is return the node
+- else calculate the middle: `midx = (left + right) // 2` and `midy = (top + bottom) // 2`
+- then recursively call the function for the four quadrants with adequate coordinates and return the node
 
 ---
   
