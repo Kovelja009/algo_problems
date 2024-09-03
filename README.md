@@ -258,7 +258,7 @@ Notes:
   # Top Interview 150 🍜 
   🟢 easy: 28
   
-  🟡 medium: 47
+  🟡 medium: 48
   
   🔴 hard: 1
 
@@ -998,6 +998,14 @@ Notes:
 - check whether the grid is the same and if it is return the node
 - else calculate the middle: `midx = (left + right) // 2` and `midy = (top + bottom) // 2`
 - then recursively call the function for the four quadrants with adequate coordinates and return the node
+
+---
+## Kadane's Algorithm
+---
+### [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
+
+Notes:
+- we calc `pref_sum` on the fly and `ans = max(ans, pref_sum)`, then if `pref_sum < 0` we set it to `0` because we want to start from the beginning
 
 ---
   
