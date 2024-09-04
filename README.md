@@ -256,7 +256,7 @@ Notes:
   <td align="left">
 
   # Top Interview 150 🍜 
-  🟢 easy: 28
+  🟢 easy: 29
   
   🟡 medium: 48
   
@@ -970,6 +970,22 @@ Notes:
 
 Notes:
 - Some things are beautiful exactly because they're unobtainable
+
+---
+### [136. Single Number](https://leetcode.com/problems/single-number/)
+
+Notes:
+- we can use the `XOR` operator to find the single number
+- because if we `XOR` the same number we get `0`
+```
+Input: [2,2,1]   0 0     1 0     0 0
+Output: 1      ^ 1 0   ^ 1 0   ^ 0 1
+               ------  ------  ------ 
+               = 1 0   = 0 0  = 0 1
+
+```
+
+
 ---
 ## Divide & Conquer
 ---
