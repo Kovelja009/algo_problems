@@ -984,8 +984,6 @@ Output: 1      ^ 1 0   ^ 1 0   ^ 0 1
                = 1 0   = 0 0  = 0 1
 
 ```
-
-
 ---
 ## Divide & Conquer
 ---
@@ -1022,6 +1020,15 @@ Notes:
 
 Notes:
 - we calc `pref_sum` on the fly and `ans = max(ans, pref_sum)`, then if `pref_sum < 0` we set it to `0` because we want to start from the beginning
+
+--- 
+### [918. Maximum Sum Circular Subarray](https://leetcode.com/problems/maximum-sum-circular-subarray/)
+
+Notes:
+- gpt and comment from the discussion helped me `:)`
+- calucate the `max subarray sum (Kadane's Algorithm)` and `min subarray sum`
+- then return the maximum of the `max subarray sum` and `total sum - min subarray sum (if solution is circular)`
+- edge case is when all elements are negative, then we return the `kadane's algorithm` result
 
 ---
   
