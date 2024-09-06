@@ -256,7 +256,7 @@ Notes:
   <td align="left">
 
   # Top Interview 150 🍜 
-  🟢 easy: 29
+  🟢 easy: 30
   
   🟡 medium: 48
   
@@ -1029,6 +1029,14 @@ Notes:
 - calucate the `max subarray sum (Kadane's Algorithm)` and `min subarray sum`
 - then return the maximum of the `max subarray sum` and `total sum - min subarray sum (if solution is circular)`
 - edge case is when all elements are negative, then we return the `kadane's algorithm` result
+
+---
+## Math
+---
+### [9. Palindrome Number](https://leetcode.com/problems/palindrome-number/)
+
+Notes:
+- "You’ll find happiness too someday."
 
 ---
   
