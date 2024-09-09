@@ -1039,6 +1039,12 @@ Notes:
 - "You’ll find happiness too someday."
 
 ---
+### [66. Plus One](https://leetcode.com/problems/plus-one/)
+
+Notes:
+- "I see now that the circumstances of one's birth are irrelevant.It is what you do with the gift of life that determines who you are."
+
+---
   
   <br>
   <img src="https://github.com/Kovelja009/algo_problems/assets/81018289/14bf71c7-96c0-453e-8d9e-4cf097b9cc90" alt="LeetCode 150" width="1500" />
