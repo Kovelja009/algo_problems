@@ -258,7 +258,7 @@ Notes:
   # Top Interview 150 🍜 
   🟢 easy: 30
   
-  🟡 medium: 48
+  🟡 medium: 50
   
   🔴 hard: 1
 
@@ -914,6 +914,20 @@ Notes:
 Notes:
 - we can use the `binary search` to find the index of the element or the index where the element should be inserted
 
+---
+### [74. Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)
+
+Notes:
+- just treat the 2D matrix as a 1D array and do the binary search
+- `row = mid // n` and `col = mid % n` where `n` is the number of columns
+- and `mid = right + (left - right) // 2`
+
+---
+### [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
+
+Notes:
+- done it in the **Algorithms** course `:)`
+- the weird one `:>`
 ---
 ## Backtracking
 ---
