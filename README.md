@@ -928,6 +928,16 @@ Notes:
 Notes:
 - done it in the **Algorithms** course `:)`
 - the weird one `:>`
+
+---
+### [34. Find First and Last Position of Element in Sorted Array
+](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
+
+Notes:
+- run two binary searches, one for the first occurrence and one for the last occurrence
+- for the first occurrence we update the `right` pointer if the `mid >= target`
+- for the last occurrence we update the `left` pointer if the `mid <= target`
+
 ---
 ## Backtracking
 ---
