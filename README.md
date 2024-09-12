@@ -258,7 +258,7 @@ Notes:
   # Top Interview 150 🍜 
   🟢 easy: 30
   
-  🟡 medium: 50
+  🟡 medium: 52
   
   🔴 hard: 1
 
@@ -930,6 +930,13 @@ Notes:
 - the weird one `:>`
 
 ---
+### [153. Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
+
+Notes:
+- if I am smaller than the right element I know that the minimum is on the left side or I am the minimum
+- if I am greater than the right element I know that the minimum is on the right side
+
+---
 ### [34. Find First and Last Position of Element in Sorted Array
 ](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
 
@@ -1067,6 +1074,15 @@ Notes:
 
 Notes:
 - "I see now that the circumstances of one's birth are irrelevant.It is what you do with the gift of life that determines who you are."
+
+---
+## Heap
+---
+### [215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
+
+Notes:
+- put elements in the `max heap` and pop `k-1` elements
+- then return the top element
 
 ---
   
