@@ -1016,6 +1016,23 @@ Output: 1      ^ 1 0   ^ 1 0   ^ 0 1
 
 ```
 ---
+### [137. Single Number II](https://leetcode.com/problems/single-number-ii/)
+
+Notes:
+- magic `:)`
+- we need to count number of `ones` and `twos` for each number
+- so we initialize `ones = 0` and `twos = 0`
+- then for each number we update the `ones` and `twos` in the following way:
+  - `ones = (ones ^ num) & ~twos`
+  - `twos = (twos ^ num) & ~ones`
+
+### [201. Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/)
+
+Notes:
+- again these bitwise problem magic `:>`
+- we want to find the common prefix of left and right number and that is the result
+
+---
 ## Divide & Conquer
 ---
 ### [108. Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)
