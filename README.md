@@ -258,7 +258,7 @@ Notes:
   # Top Interview 150 🍜 
   🟢 easy: 30
   
-  🟡 medium: 52
+  🟡 medium: 53
   
   🔴 hard: 1
 
@@ -1084,6 +1084,17 @@ Notes:
 - put elements in the `max heap` and pop `k-1` elements
 - then return the top element
 
+### [373. Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/)
+
+Notes:
+- even though `2 pointers` seems intuitive it doesn't work, for example:
+  ```
+  nums1 = [1,1,2]
+  nums2 = [1,2,3]
+  output = [[1,1],[1,1],[1,2],[2,1],[2,2],[2,3]]
+  expected = [[1,1],[1,1],[2,1],[1,2],[1,2],[2,2],[1,3],[1,3],[2,3]]
+  ```
+- so we use the `min heap` to store the sum and the indexes of the elements from the two arrays and while we add up to `k` elements we pop the element from the `min heap` make `new_i = i+1` and `new_j = j+1` and if we haven't visited the pair we add next pairs `(new_i, j)` and `(i, new_j)` to the `min heap`
 ---
   
   <br>
