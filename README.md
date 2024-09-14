@@ -3,35 +3,68 @@
 <table>
   <tr>
     <td>
-<div align="left">
-  
-  ![giphy](https://github.com/Kovelja009/algo_problems/assets/81018289/1ccbb146-bb6e-45a4-a501-e0676c78dd86)
-</div>
+      <div align="left">
+        <img src="https://github.com/Kovelja009/algo_problems/assets/81018289/1ccbb146-bb6e-45a4-a501-e0676c78dd86" alt="giphy">
+      </div>
     </td>
-    <td>
-
-- [LeetCode 75 🌸](#leetcode-75-)
-  - [Graphs - DFS](#graphs---dfs)
-  - [Heap / Priority Queue](#heap--priority-queue)
-  - [Binary Search](#binary-search)
-  - [Backtracking](#backtracking)
-  - [Dynamic Programming (1D)](#dynamic-programming-1d)
-  - [Dynamic Programming (2D)](#dynamic-programming-2d)
-  - [Bit Manipulation](#bit-manipulation)
-  - [Trie](#trie)
-  - [Intervals](#intervals)
-  - [Monotonic Stack](#monotonic-stack)
-- [Top Interview 150 🍜](#top-interview-150-)
-  - [Array/String](#arraystring)
-  - [Two Pointers](#two-pointers)
-  - [Hash Map](#hash-map)
-- [Microsoft 🏮](#microsoft-)
-  - [🟢 Easy](#-easy)
-  - [🟡 Medium](#-medium)
-  - [🔴 Hard](#-hard)
-
-
+    <td style="vertical-align: top; text-align: center;">
+      <div align="left">
+        <strong><a href="#leetcode-75-">LeetCode 75 🌸</a></strong>
+        <ul>
+          <li><a href="#graphs---dfs">Graphs - DFS</a></li>
+          <li><a href="#heap--priority-queue">Heap / Priority Queue</a></li>
+          <li><a href="#binary-search">Binary Search</a></li>
+          <li><a href="#backtracking">Backtracking</a></li>
+          <li><a href="#dynamic-programming-1d">Dynamic Programming (1D)</a></li>
+          <li><a href="#dynamic-programming-2d">Dynamic Programming (2D)</a></li>
+          <li><a href="#bit-manipulation">Bit Manipulation</a></li>
+          <li><a href="#trie">Trie</a></li>
+          <li><a href="#intervals">Intervals</a></li>
+          <li><a href="#monotonic-stack">Monotonic Stack</a></li>
+        </ul>
+      </div>
+    </td>
+    <td style="vertical-align: top; text-align: center;">
+      <div align="left">
+        <strong><a href="#top-interview-150-">Top Interview 150 🍜</a></strong>
+        <ul>
+          <li><a href="#arraystring">Array/String</a></li>
+          <li><a href="#two-pointers">Two Pointers</a></li>
+          <li><a href="#hash-map">Hash Map</a></li>
+          <li><a href="#intervals-1">Intervals</a></li>
+          <li><a href="#stack">Stack</a></li>
+          <li><a href="#linked-list">Linked List</a></li>
+          <li><a href="#binary-tree-general">Binary Tree General</a></li>
+          <li><a href="#binary-tree-bfs">Binary Tree BFS</a></li>
+          <li><a href="#binary-search-tree">Binary Search Tree</a></li>
+          <li><a href="#graph-general">Graph General</a></li>
+          <li><a href="#graph-bfs">Graph BFS</a></li>
+          <li><a href="#trie-1">Trie</a></li>
+          <li><a href="#binary-search-1">Binary Search</a></li>
+          <li><a href="#backtracking-1">Backtracking</a></li>
+          <li><a href="#bit-manipulation-1">Bit Manipulation</a></li>
+          <li><a href="#divide--conquer">Divide & Conquer</a></li>
+          <li><a href="#kadanes-algorithm">Kadane's Algorithm</a></li>
+          <li><a href="#math">Math</a></li>
+          <li><a href="#1d-dp">1D DP</a></li>
+          <li><a href="#heap">Heap</a></li>
+        </ul>
+      </div>
+    </td>
+    <td style="vertical-align: top; text-align: center;">
+      <div align="left">
+        <strong><a href="#microsoft-">Microsoft 🏮</a></strong>
+        <ul>
+          <li><a href="#-easy">🟢 Easy</a></li>
+          <li><a href="#-medium">🟡 Medium</a></li>
+          <li><a href="#-hard">🔴 Hard</a></li>
+        </ul>
+      </div>
+    </td>
+  </tr>
 </table>
+
+
 
 
 ---
@@ -258,7 +291,7 @@ Notes:
   # Top Interview 150 🍜 
   🟢 easy: 30
   
-  🟡 medium: 53
+  🟡 medium: 55
   
   🔴 hard: 1
 
@@ -1093,6 +1126,38 @@ Notes:
 - "I see now that the circumstances of one's birth are irrelevant.It is what you do with the gift of life that determines who you are."
 
 ---
+### [172. Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/)
+
+Notes:
+- first approach is to calculate the factorial and divide number by 10 until we get 0, so we can count the number of zeros
+- that's not efficient as factorial grows very fast
+- so we need number of 10s, but 10 can be factored into 2 and 5, and there are more 2s than 5s, so we can count the number of 5s
+- so all we need to do is count the number of 5s in the number `n` and that is the number of trailing zeros `:)`
+
+---
+### [69. Sqrt(x)](https://leetcode.com/problems/sqrtx/)
+
+Notes:
+- we can use the `binary search` to find the square root of the number where lower bound is `1` and upper bound is `x/2`
+
+---
+### [50. Pow(x, n)](https://leetcode.com/problems/powx-n/)
+
+Notes:
+- we can use recursion to calculate the power of the number
+- if `n == 0` we return `1`
+- if `n < 0` we return change `x = 1/x` and `n = -n`
+- we recursively call the function for the `n//2` and then we return the result squared and also multiply it by `x` if `n` is odd 
+
+---
+## [1D DP]
+---
+### [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)
+
+Notes:
+- dp formula is `dp3 = dp1 + dp2` 
+
+---
 ## Heap
 ---
 ### [215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
@@ -1112,6 +1177,7 @@ Notes:
   expected = [[1,1],[1,1],[2,1],[1,2],[1,2],[2,2],[1,3],[1,3],[2,3]]
   ```
 - so we use the `min heap` to store the sum and the indexes of the elements from the two arrays and while we add up to `k` elements we pop the element from the `min heap` make `new_i = i+1` and `new_j = j+1` and if we haven't visited the pair we add next pairs `(new_i, j)` and `(i, new_j)` to the `min heap`
+
 ---
   
   <br>
