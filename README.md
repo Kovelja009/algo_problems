@@ -291,7 +291,7 @@ Notes:
   # Top Interview 150 🍜 
   🟢 easy: 30
   
-  🟡 medium: 55
+  🟡 medium: 56
   
   🔴 hard: 1
 
@@ -1156,6 +1156,16 @@ Notes:
 
 Notes:
 - dp formula is `dp3 = dp1 + dp2` 
+
+---
+### [139. Word Break](https://leetcode.com/problems/word-break/)
+
+Notes:
+- Neetcode 🚀 [here](https://www.youtube.com/watch?v=Sx9NNgInc3A&ab_channel=NeetCode)
+
+- for every index we try to find the word in the `wordDict` that ends at that index and if we find one we update the `dp` array by what is at the index `i - len(word)`, so basically the formula is:
+  - if we found matching word at certain index `i`: `dp[i] = dp[i - len(word)]`
+  - and solution is `dp[n]` where `n` is the length of the string 
 
 ---
 ## Heap
