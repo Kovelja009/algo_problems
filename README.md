@@ -1168,6 +1168,17 @@ Notes:
   - and solution is `dp[n]` where `n` is the length of the string 
 
 ---
+### [322. Coin Change](https://leetcode.com/problems/coin-change/)
+
+Notes:
+- Done it in the **Algorithms** course `:>`
+- idea is that for each coin we store the minimum number of coins needed to make the amount
+- so the dp formula is:
+  - for each coin we check whether `i - coin >= 0` and if it is we update the `dp[i] = min(dp[i], dp[i - coin] + 1)`
+  - if we can't make the amount with the current coin we set the `dp[i] = -1`
+  - and the result is `dp[amount]`
+
+---
 ## Heap
 ---
 ### [215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
