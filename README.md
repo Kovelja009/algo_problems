@@ -1225,7 +1225,7 @@ Notes:
   
   🟡 medium: 31
   
-  🔴 hard: 11
+  🔴 hard: 12
 
   </td>
   </tr>
@@ -1700,3 +1700,13 @@ Notes:
   - we consider `longest + second_longest + 1` because that might be greater than what parent cound construct with just `longest+1` path and we can't return `longest + second_longest + 1` because it wouldn't be path anymore
 
 - so solution is `max(ans, dfs(node))` 
+
+---
+### [1453. Maximum Number of Darts Inside of a Circular Dartboard](https://leetcode.com/problems/maximum-number-of-darts-inside-of-a-circular-dartboard/)
+
+Notes:
+- thanks to [lichuan199010](https://leetcode.com/problems/maximum-number-of-darts-inside-of-a-circular-dartboard/solutions/636345/python-o-n3-and-o-n2logn-solution-explained-in-detail-with-pictures/) for explanation
+
+- Basically:
+  - for each pair of points we calculate the center of the circle and (we can have 0 centers `if dist(p1, p2) > 2*r`), one center `if dist(p1, p2) == 2*r` and two centers `if dist(p1, p2) < 2*r`
+  - then for each center we calculate the number of points that are inside that circle and update the `max_points` number 
