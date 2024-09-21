@@ -1225,7 +1225,7 @@ Notes:
   
   🟡 medium: 31
   
-  🔴 hard: 12
+  🔴 hard: 13
 
   </td>
   </tr>
@@ -1710,3 +1710,13 @@ Notes:
 - Basically:
   - for each pair of points we calculate the center of the circle and (we can have 0 centers `if dist(p1, p2) > 2*r`), one center `if dist(p1, p2) == 2*r` and two centers `if dist(p1, p2) < 2*r`
   - then for each center we calculate the number of points that are inside that circle and update the `max_points` number 
+
+---
+### [84. Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)
+
+Notes:
+- done it in the **Algorithms** course `:>`
+- for each index `i`we calculate how many elements to the left and right are greater than the current element
+- we can do that by using `stack` where we store the indexes
+- while our height is greater than the current element we pop the element from the stack, after that ans is `ans = i - last_pop` and if we popped something we add how many elements to the right/left are greater than `last_pop` element
+- then result is `ans = max(ans, height[i]*(right-left+1))`
