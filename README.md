@@ -1223,7 +1223,7 @@ Notes:
   # Microsoft 🏮 
   🟢 easy: 6
   
-  🟡 medium: 31
+  🟡 medium: 34
   
   🔴 hard: 13
 
@@ -1569,6 +1569,44 @@ Notes:
 2. Using `counting sort` -> `O(n)`:
    - essentially the same we just sort greater array in decreasing order and smaller array in increasing order using `counting sort` because we now that all values are in range `[1,6]`
 
+---
+### [2149. Rearrange Array Elements by Sign](https://leetcode.com/problems/rearrange-array-elements-by-sign/)
+`two pointers`
+
+Notes:
+- we can use `two pointers` to solve this problem
+- initialize `left = 0` and `right = 0`
+- then if the `pos` is:
+  - even: move `left` to the first positive number
+  - odd: move `right` to the first negative number
+
+---
+### [316. Remove Duplicate Letters](https://leetcode.com/problems/remove-duplicate-letters/)
+`stack` `hash map`
+
+Notes:
+- first we need to know which `chars` we can remove
+- for that we can do preprocessing with `hash map` 
+- then we can use `stack` to store the characters in lexicographical order where:
+  - if the `char` is already in the stack we continue
+  - for each `char` we remove all chars in stack that are greater than the current `char` and appear more than once  
+  - then we add the `char` to the stack
+
+---
+### [2743. Count Substrings Without Repeating Characters](https://leetcode.com/problems/count-substrings-without-repeating-characters/)
+`sliding window`
+
+Notes:
+- for each index `i` is our left bound and we move the right bound while we don't have repeating characters and in each step we increment the counter by one
+
+---
+### [142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)
+`linked list` `slow-fast pointers` `math`
+
+Notes:
+- We can solve problem with `Floyd's Tortoise and Hare` algorithm
+- thanks to saiamrit for the [explanation](https://leetcode.com/problems/linked-list-cycle-ii/solutions/2184711/o-1-space-python-solution-with-clear-explanation-faster-than-90-solutions/) `:)`
+- essentialy once the `fast` and `slow` pointers meet we can move the `slow` pointer to the `head` and then move both pointers by one until they meet again and that is the `cycle start` (there is a math behind it `:)`)
 
 ---
 ## 🔴 Hard
@@ -1703,9 +1741,10 @@ Notes:
 
 ---
 ### [1453. Maximum Number of Darts Inside of a Circular Dartboard](https://leetcode.com/problems/maximum-number-of-darts-inside-of-a-circular-dartboard/)
+`geometry` `math`
 
 Notes:
-- thanks to [lichuan199010](https://leetcode.com/problems/maximum-number-of-darts-inside-of-a-circular-dartboard/solutions/636345/python-o-n3-and-o-n2logn-solution-explained-in-detail-with-pictures/) for explanation
+- thanks to lichuan199010 for [explanation](https://leetcode.com/problems/maximum-number-of-darts-inside-of-a-circular-dartboard/solutions/636345/python-o-n3-and-o-n2logn-solution-explained-in-detail-with-pictures/)
 
 - Basically:
   - for each pair of points we calculate the center of the circle and (we can have 0 centers `if dist(p1, p2) > 2*r`), one center `if dist(p1, p2) == 2*r` and two centers `if dist(p1, p2) < 2*r`
@@ -1713,6 +1752,7 @@ Notes:
 
 ---
 ### [84. Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)
+`stack`
 
 Notes:
 - done it in the **Algorithms** course `:>`
