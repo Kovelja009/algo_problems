@@ -1221,9 +1221,9 @@ Notes:
 
   
   # Microsoft 🏮 
-  🟢 easy: 7
+  🟢 easy: 8
   
-  🟡 medium: 36
+  🟡 medium: 37
   
   🔴 hard: 13
 
@@ -1281,6 +1281,13 @@ Notes:
 
 Notes:
 - we can use the `bit manipulation` to check whether the number is the power of `2` by doing `n & (n-1) == 0`
+
+---
+### [1217. Minimum Cost to Move Chips to The Same Position](https://leetcode.com/problems/minimum-cost-to-move-chips-to-the-same-position/)
+`array` `math`
+
+Notes:
+- we can just count the number of even and odd numbers and return the minimum of the two
 
 ---
 ## 🟡 Medium
@@ -1632,6 +1639,13 @@ Notes:
 Notes:
 - we can use `slow` and `fast` pointers to find the cycle in the array
 - when they meet, we just reset fast to the start and move both pointers by one until they meet again `:)`
+
+---
+### [166. Fraction to Recurring Decimal](https://leetcode.com/problems/fraction-to-recurring-decimal/)
+`hash map` `math`
+
+Notes:
+- simple elegance `:)`
 
 ---
 ## 🔴 Hard
