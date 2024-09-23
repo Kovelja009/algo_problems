@@ -1221,9 +1221,9 @@ Notes:
 
   
   # Microsoft 🏮 
-  🟢 easy: 6
+  🟢 easy: 7
   
-  🟡 medium: 34
+  🟡 medium: 36
   
   🔴 hard: 13
 
@@ -1274,6 +1274,13 @@ Notes:
 
 Notes:
 - as long as `digit` is greater than next element we keep searching for the next occurrence of the `digit` and once we find index where `digit` is smaller than the next element we can remove that occurrence of the `digit`
+
+---
+### [231. Power of Two](https://leetcode.com/problems/power-of-two/)
+`bit manipulation`
+
+Notes:
+- we can use the `bit manipulation` to check whether the number is the power of `2` by doing `n & (n-1) == 0`
 
 ---
 ## 🟡 Medium
@@ -1607,6 +1614,24 @@ Notes:
 - We can solve problem with `Floyd's Tortoise and Hare` algorithm
 - thanks to saiamrit for the [explanation](https://leetcode.com/problems/linked-list-cycle-ii/solutions/2184711/o-1-space-python-solution-with-clear-explanation-faster-than-90-solutions/) `:)`
 - essentialy once the `fast` and `slow` pointers meet we can move the `slow` pointer to the `head` and then move both pointers by one until they meet again and that is the `cycle start` (there is a math behind it `:)`)
+
+---
+### [Maximum Matrix Sum](https://leetcode.com/problems/maximum-matrix-sum/)
+`matrix` `greedy` `math`
+
+Notes:
+- we want to count number of negative numbers and sum of absolute values of all numbers
+- if the number of negative numbers is even we can just sum all the absolute values
+- if we have at least one `zero` we can sum all the absolute values, because `zero` can absorb the negative numbers
+- if we have odd number of negative numbers we can sum all the absolute values and subtract the double of the smallest absolute value (double because we already counted it in the sum)
+
+---
+### [287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)
+`array` `two pointers`
+
+Notes:
+- we can use `slow` and `fast` pointers to find the cycle in the array
+- when they meet, we just reset fast to the start and move both pointers by one until they meet again `:)`
 
 ---
 ## 🔴 Hard
