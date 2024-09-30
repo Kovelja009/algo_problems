@@ -291,7 +291,7 @@ Notes:
   # Top Interview 150 🍜 
   🟢 easy: 30
   
-  🟡 medium: 56
+  🟡 medium: 57
   
   🔴 hard: 1
 
@@ -1177,6 +1177,17 @@ Notes:
   - for each coin we check whether `i - coin >= 0` and if it is we update the `dp[i] = min(dp[i], dp[i - coin] + 1)`
   - if we can't make the amount with the current coin we set the `dp[i] = -1`
   - and the result is `dp[amount]`
+
+---
+### [300. Longest Increasing Subsequence]
+
+Notes:
+1. Approach: `O(n^2)` time complexity
+    - we can use the `dp` array where the `dp[i]` is the length of the longest increasing subsequence that ends at the index `i`
+    - for each index we go through the previous indexes and if the number at the current index is greater than the number at the previous index we update the `dp[i] = max(dp[i], dp[j] + 1)`
+
+2. Aproach: `O(n log(n))` time complexity
+   - solution explained [here](https://leetcode.com/problems/longest-increasing-subsequence/solutions/667975/python-3-lines-dp-with-binary-search-explained/)
 
 ---
 ## Heap
