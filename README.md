@@ -47,6 +47,7 @@
           <li><a href="#kadanes-algorithm">Kadane's Algorithm</a></li>
           <li><a href="#math">Math</a></li>
           <li><a href="#1d-dp">1D DP</a></li>
+          <li><a href="#2d-dp">2D DP</a></li>
           <li><a href="#heap">Heap</a></li>
         </ul>
       </div>
@@ -291,7 +292,7 @@ Notes:
   # Top Interview 150 🍜 
   🟢 easy: 30
   
-  🟡 medium: 57
+  🟡 medium: 58
   
   🔴 hard: 1
 
@@ -1150,7 +1151,7 @@ Notes:
 - we recursively call the function for the `n//2` and then we return the result squared and also multiply it by `x` if `n` is odd 
 
 ---
-## [1D DP]
+## 1D DP
 ---
 ### [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)
 
@@ -1179,7 +1180,7 @@ Notes:
   - and the result is `dp[amount]`
 
 ---
-### [300. Longest Increasing Subsequence]
+### [300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)
 
 Notes:
 1. Approach: `O(n^2)` time complexity
@@ -1188,6 +1189,19 @@ Notes:
 
 2. Aproach: `O(n log(n))` time complexity
    - solution explained [here](https://leetcode.com/problems/longest-increasing-subsequence/solutions/667975/python-3-lines-dp-with-binary-search-explained/)
+
+---
+## 2D DP
+---
+### [120. Triangle](https://leetcode.com/problems/triangle/)
+
+Notes:
+1. Approach: Space complexity: `O(triangle)`
+  - formula is: `dp[i][j] = min(dp[i+1][j], dp[i+1][j+1]) + triangle[i][j]`
+2. Approach: Space complexity: `O(n)` where `n` is the number of rows
+  - we can just reuse the `dp` array and update it in the following way:
+  - formula is: `dp[j] = min(dp[j], dp[j+1]) + triangle[i][j]`
+  
 
 ---
 ## Heap
