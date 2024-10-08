@@ -1202,6 +1202,13 @@ Notes:
   - we can just reuse the `dp` array and update it in the following way:
   - formula is: `dp[j] = min(dp[j], dp[j+1]) + triangle[i][j]`
   
+---
+### [64. Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)
+
+Notes:
+- we can use the `dp` array where the `dp[i][j]` is the minimum path sum to the cell `(i, j)`
+- where formula is `dp[i][j] = min(dp[i-1][j], dp[i][j-1]) + grid[i][j]`
+- we can optimize space complexity by storing things inside the `grid` array instead of the `dp` array
 
 ---
 ## Heap
