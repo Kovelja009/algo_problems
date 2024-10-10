@@ -1211,6 +1211,14 @@ Notes:
 - we can optimize space complexity by storing things inside the `grid` array instead of the `dp` array
 
 ---
+### [63. Unique Paths II](https://leetcode.com/problems/unique-paths-ii/)
+
+Notes:
+- we can use the `dp` array where the `dp[i][j]` is the number of unique paths to the cell `(i, j)`
+- we first initilize first row and first column to `1` unless there is an obstacle
+- then the formula is `dp[i][j] = dp[i-1][j] + dp[i][j-1]` unless there is an obstacle
+
+---
 ## Heap
 ---
 ### [215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
