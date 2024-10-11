@@ -292,7 +292,7 @@ Notes:
   # Top Interview 150 🍜 
   🟢 easy: 30
   
-  🟡 medium: 58
+  🟡 medium: 61
   
   🔴 hard: 1
 
@@ -1217,6 +1217,14 @@ Notes:
 - we can use the `dp` array where the `dp[i][j]` is the number of unique paths to the cell `(i, j)`
 - we first initilize first row and first column to `1` unless there is an obstacle
 - then the formula is `dp[i][j] = dp[i-1][j] + dp[i][j-1]` unless there is an obstacle
+
+---
+### [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
+
+Notes:
+- we can use the `dp` array where the `dp[i][j]` is `True` if the substring from `i` to `j` is a palindrome
+- we initilize the `dp` array where the `dp[i][i]` is `True` and `dp[i][i+1]` is `True` if the characters are the same
+- then formula for the rest of the `dp` array is `dp[i][j] = dp[i+1][j-1] and s[i] == s[j]`
 
 ---
 ## Heap
